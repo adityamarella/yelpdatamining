@@ -44,8 +44,14 @@ class MainHandler(BaseHandler):
 
     # This method should return the html to be displayed
     def get(self):
-        context = {}
+        d = self.read_data().items()
+        
+        context = {"anfreq": d, "nrows": len(d)}
         # and render the response
         self.render_response('index.html', **context)
+
+    def read_data(self):
+        return eval(open("data/anfreq.json").read())
+
 
 app = webapp2.WSGIApplication([('/.*', MainHandler)], debug=True)

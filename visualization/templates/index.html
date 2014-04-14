@@ -9,6 +9,9 @@
 <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.14.1/build/cssgrids/cssgrids-min.css"/>
 
 <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />-->
+<link rel="stylesheet" type="text/css" href="http://visapi-gadgets.googlecode.com/svn/trunk/termcloud/tc.css"/>
+<script type="text/javascript" src="http://visapi-gadgets.googlecode.com/svn/trunk/termcloud/tc.js"></script>
+
 <link href="stylesheets/d3.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="d3/d3.v3.js"></script>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -16,5 +19,29 @@
 </head>
 <h1 class="h1">Yelp! Visualization</h1>
 <body id="doc">
+    <div id="tcdiv"></div>
+    <script type="text/javascript">
+      google.load("visualization", "1");
+      google.setOnLoadCallback(draw);
+      function draw() {
+        data = new google.visualization.DataTable();
+        data.addColumn('string', 'Label');
+        data.addColumn('number', 'Value');
+        data.addColumn('string', 'Link');
+        data.addRows({{nrows}});
+        
+        var idx = 0; 
+        {% for row in anfreq %}
+        data.setValue(idx, 0, '{{row[0]}}');
+        data.setValue(idx, 1, {{row[1]}});
+        data.setValue(idx, 2, 'http://www.google.com');
+        idx++;
+        {% endfor %}
+
+        var outputDiv = document.getElementById('tcdiv');
+        var tc = new TermCloud(outputDiv);
+        tc.draw(data, null);
+      }
+    </script>
 </body>
 </html>
