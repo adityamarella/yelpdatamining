@@ -47,6 +47,7 @@ Datamining and visualization of Yelp! academic dataset http://www.yelp.com/datas
   - http://www.wordle.net/
   - WordCloud API (http://visapi-gadgets.googlecode.com/svn/trunk/wordcloud/doc.html)
   - TermCloud API (http://visapi-gadgets.googlecode.com/svn/trunk/termcloud/doc.html)
+  - Wordle style WordCloud using D3 (https://github.com/jasondavies/d3-cloud)
 
 #NOTES
 * Topic Analysis work
