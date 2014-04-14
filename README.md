@@ -1,4 +1,5 @@
-##YELP! Visualization
+#YELP! Visualization
+Datamining and visualization of Yelp! academic dataset http://www.yelp.com/dataset_challenge
 
 #Goals
 * Tell a story with the data
@@ -41,6 +42,11 @@
   - Google Cloud APIs - <a href="https://developers.google.com/prediction/docs/sentiment_analysis?_ga=1.226385882.1376685994.1395843476">Creating a sentiment analysis model</a>
   - <a href="http://sentiwordnet.isti.cnr.it/">SentiWordNet</a>
   - Stanford Sentiment Analysis - http://nlp.stanford.edu/sentiment/treebank.html
+
+* Word cloud visualization
+  - http://www.wordle.net/
+  - WordCloud API (http://visapi-gadgets.googlecode.com/svn/trunk/wordcloud/doc.html)
+  - TermCloud API (http://visapi-gadgets.googlecode.com/svn/trunk/termcloud/doc.html)
 
 #NOTES
 * Topic Analysis work
