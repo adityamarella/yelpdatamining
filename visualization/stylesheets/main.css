@@ -1,0 +1,29 @@
+
+#doc {
+        margin:auto; /* center in viewport */
+        width: 90%; /* fix page width */
+}
+
+
+.h1 {
+    font-weight: bold;
+    font-size: 250%;
+    text-align: center;
+    margin: 32px;
+}
+
+.h4 {
+    font-size: 150%;
+    font-weight: bold;
+    padding: 2px 7px 2px 7px;
+}
+
+li {
+    height: 50px;
+    overflow: hidden;
+}
+
+a, a:visited {
+    color: #007DEF;
+}
+
