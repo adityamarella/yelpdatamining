@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Privacy & Security</title>
+
+<link rel="stylesheet" href="http://yui.yahooapis.com/3.14.1/build/cssreset/cssreset.css" type="text/css"/>
+<link rel="stylesheet" href="http://yui.yahooapis.com/3.14.1/build/cssfonts/cssfonts.css" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.14.1/build/cssgrids/cssgrids-min.css"/>
+
+<link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+
+<style>
+#doc {
+        margin:auto; /* center in viewport */
+        width: 970px; /* fix page width */
+}
+
+
+.h1 {
+    color: red;
+    font-weight: bold;
+    font-size: 250%;
+    text-align: center;
+    margin: 32px;
+}
+
+.h4 {
+    font-size: 150%;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 2px 7px 2px 7px;
+}
+
+li {
+    height: 50px;
+    overflow: hidden;
+}
+
+a, a:visited {
+    color: #007DEF;
+}
+
+</style>
+
+</head>
+<body>
+
+<div>
+        <ul>
+        {% for k,v in data.iteritems() %}
+        <li> <b>{{ v['name'] }}</b>; Type: {{ v['type'] }}; BusinessID: {{ k }} </li>
+        {% endfor %}
+        </ul>
+</div>
+
+</body>
+</html>
