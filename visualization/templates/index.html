@@ -34,7 +34,7 @@
         {% for row in anfreq %}
         data.setValue(idx, 0, '{{row[0]}}');
         data.setValue(idx, 1, {{row[1]}});
-        data.setValue(idx, 2, 'http://www.google.com');
+        data.setValue(idx, 2, '{{"http://amarella-project-data.appspot.com/getinfo?tk=%s&tsrc=adjnoun&mode=gettoken"%(row[0])}}');
         idx++;
         {% endfor %}
 
