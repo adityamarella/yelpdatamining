@@ -1,4 +1,4 @@
-#YELP! Visualization
+#Yelp! DataMining & Visualization
 Datamining and visualization of Yelp! academic dataset http://www.yelp.com/dataset_challenge
 
 #Goals
