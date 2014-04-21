@@ -10,46 +10,25 @@
 <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
 
 <style>
-#doc {
-        margin:auto; /* center in viewport */
-        width: 970px; /* fix page width */
-}
-
-
-.h1 {
-    color: red;
-    font-weight: bold;
-    font-size: 250%;
-    text-align: center;
-    margin: 32px;
-}
-
-.h4 {
-    font-size: 150%;
-    background-color: red;
-    color: white;
-    font-weight: bold;
-    padding: 2px 7px 2px 7px;
-}
 
 li {
     height: 50px;
+    width: float;
     overflow: hidden;
-}
-
-a, a:visited {
-    color: #007DEF;
 }
 
 </style>
 
 </head>
-<body>
+<body align="center">
 
-<div>
+<div style="width: 40%; margin: 0 auto" align="left">
         <ul>
         {% for k,v in data.iteritems() %}
-        <li> <b>{{ v['name'] }}</b>; Type: {{ v['type'] }}; BusinessID: {{ k }} </li>
+        <li style="border-bottom: 2px; border-color: #000"> 
+            <div><b>{{ v['name'] }}</b></div> 
+            <div style="color: #aaa;">Type: {{ v['type'] }}; BusinessID: {{ k }} </div> 
+        </li>
         {% endfor %}
         </ul>
 </div>

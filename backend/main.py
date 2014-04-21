@@ -43,7 +43,7 @@ class BaseHandler(webapp2.RequestHandler):
 # Class MainHandler now subclasses BaseHandler instead of webapp2
 class MainHandler(BaseHandler):
         
-        # This method should return the html to be displayed
+    # This method should return the html to be displayed
     def get(self):
        
         mode = self.request.get("mode", "gettoken")
@@ -123,8 +123,5 @@ class MainHandler(BaseHandler):
                 logging.info("failed to load file")
         
         return data[token]
-
-    def convert_html(self, data):
-        pass
 
 app = webapp2.WSGIApplication([('/.*', MainHandler)], debug=True)
