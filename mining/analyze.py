@@ -17,8 +17,9 @@ k = set([])
 #Can we create a properly normalized database from this data?
 for row in generate():
     k = k.union(row.keys())
-print "Columns: %s"%(repr(k))
-print "####################"
+print "Number of unique columns: %d"%len(k)
+print repr(k)
+print
 
 #print unique categories
 cats = {}
@@ -29,15 +30,42 @@ for row in generate():
 cats = sorted(cats.iteritems(), key=operator.itemgetter(1)) 
 cats.reverse()
 
-print "Num unique categories: %d"%len(cats)
+print "Num of unique categories: %d"%len(cats)
 print cats[:10]
-print "####################"
+print
 
 #print unique attributes
 attrs = {}
 for row in generate():
     for k,v in row['attributes'].iteritems():
         attrs.setdefault(str(type(v)), set([])).add(k)
-print "Unique attrs: %s"%(repr(attrs))
-print "####################"
-    
+print "Number of unique attrs: %d"%len(attrs)
+print repr(attrs)
+print
+
+#print 'Good For' stats
+nGoodFor = 0
+nHours = 0
+sattrs = ['Good For', 'Ambience']
+N = [0]*len(sattrs)
+per_attr_cnt = [{}, {}]
+for row in generate():
+    attrs = row['attributes']
+
+    for i, k in enumerate(sattrs):
+        gf = attrs.get(k, {})
+        if len(gf) > 0:
+            N[i] = N[i] + 1
+
+        for k,v in gf.iteritems():
+            if v==True:
+                per_attr_cnt[i][k] = per_attr_cnt[i].setdefault(k, 0) + 1
+
+for i,k in enumerate(sattrs):
+    print "Number of businesses with '%s' info: %d"%(k, N[i])
+    print per_attr_cnt[i]
+    print
+
+print
+
+#print stats on how many businesses have hours info
