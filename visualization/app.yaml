@@ -12,6 +12,9 @@ handlers:
 - url: /static
   static_dir: static
 
+- url: /treemap
+  script: treemap.app
+
 - url: /.*
   script: main.app
 
