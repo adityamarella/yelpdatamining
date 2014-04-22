@@ -9,11 +9,8 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
 
-- url: /stylesheets
-  static_dir: stylesheets
-
-- url: /d3
-  static_dir: d3
+- url: /static
+  static_dir: static
 
 - url: /.*
   script: main.app

@@ -8,12 +8,12 @@
 <link rel="stylesheet" href="http://yui.yahooapis.com/3.14.1/build/cssfonts/cssfonts.css" type="text/css"/>
 <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.14.1/build/cssgrids/cssgrids-min.css"/>
 
-<link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />-->
+<link type="text/css" rel="stylesheet" href="static/stylesheets/main.css" />-->
 <link rel="stylesheet" type="text/css" href="http://visapi-gadgets.googlecode.com/svn/trunk/termcloud/tc.css"/>
 <script type="text/javascript" src="http://visapi-gadgets.googlecode.com/svn/trunk/termcloud/tc.js"></script>
 
-<link href="stylesheets/d3.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="d3/d3.v3.js"></script>
+<link href="static/stylesheets/d3.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="static/bower_components/d3/d3.js"></script>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
 </head>
@@ -29,8 +29,8 @@
         data.addColumn('number', 'Value');
         data.addColumn('string', 'Link');
         data.addRows({{nrows}});
-        
-        var idx = 0; 
+
+        var idx = 0;
         {% for row in anfreq %}
         data.setValue(idx, 0, '{{row[0]}}');
         data.setValue(idx, 1, {{row[1]}});
