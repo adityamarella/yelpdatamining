@@ -13,7 +13,8 @@ class Category(object):
     def __init__(self, alias=None, title=None, category=[]):
         self.alias = alias
         self.title = title
-        self.category =[Category(**c) for c in category]
+        self.category = [Category(**c) for c in category]
+        self.businesses = set()
 
     # def __repr__(self):
     #     return "%s(alias=%r, title=%r, category=%r)" % (
@@ -29,3 +30,7 @@ class Category(object):
             self.alias,
             self.title
         )
+
+    @property
+    def business_count(self):
+        return len(self.businesses)
