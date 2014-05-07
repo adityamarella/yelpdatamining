@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 
 """
-- normalized sqlite database of yelp data is created 
+This script creates a normalized sqlite database of yelp data 
 - Tables: businesses, users, reviews, categories, categories_businesses, categories_subcategories
 - categories_subcategories captures the full category tree hierarchy  
-- indexes are created to speed up most of the useful queries
+- indices are created to speed up many useful queries
 For eg:
-This query output all the categories under restaurants category; 17 is hardcoded restaurants
+This query outputs all the categories under "Restaurants" category
 #> sqlite3 yelp.db "select C2.title from categories_subcategories as cs\
         , categories as C1, categories as C2 where cs.subcategory_id = C2.id\
         and cs.category_id=C1.id and C1.title='Restaurants'" 
