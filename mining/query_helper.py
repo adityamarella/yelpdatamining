@@ -1,5 +1,6 @@
-
+import json
 import sqlite3
+import sys
 
 class CategoryTree(object):
     """
@@ -21,6 +22,17 @@ class CategoryTree(object):
             self.title,
         )
 
+class CategoryTreeEncoder(json.JSONEncoder):
+    """A JSONEncoder for CategoryTree.
+    """
+    def default(self, obj):
+        if isinstance(obj, CategoryTree):
+            return {'alias': obj.category_id,
+                    'title': obj.title,
+                    'category': obj.children
+                   }
+        # Let the base class default method raise the TypeError
+        return super().default(self, obj)
 
 class QueryHelper(object):
 
@@ -72,7 +84,14 @@ class QueryHelper(object):
 
 
 if __name__=='__main__':
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--database', required=True,
+                        help='the filename of the database containing the Yelp data')
+    parser.add_argument('output', nargs='?', type=argparse.FileType('w'), default=sys.stdout,
+                        help='write output to file')
+    args = parser.parse_args()
 
-    helper = QueryHelper("../../yelpdata/yelp.db")
+    helper = QueryHelper(args.database)
     root = helper.create_category_tree()
-    print repr(root.children)
+    json.dump(root.children, args.output, cls=CategoryTreeEncoder)
