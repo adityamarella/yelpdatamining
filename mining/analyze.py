@@ -3,19 +3,15 @@
 import sqlite3
 import simplejson
 import operator
+from yelputils import yelprows
 
-def generate():
-    fpath = "../../yelpdata/yelp_academic_dataset_business.json"
-    fp = open(fpath)
-    for line in fp:
-        yield simplejson.loads(line.strip())
-    fp.close()
+fpath = "../../yelpdata/yelp_academic_dataset_business.json"
 
 k = set([]) 
 
 #print all the columns for business data
 #Can we create a properly normalized database from this data?
-for row in generate():
+for row in yelprows(fpath):
     k = k.union(row.keys())
 print "Number of unique columns: %d"%len(k)
 print repr(k)
@@ -23,7 +19,7 @@ print
 
 #print unique categories
 cats = {}
-for row in generate():
+for row in yelprows(fpath):
     for item in row['categories']:
         cats[item] = cats.setdefault(item, 0) + 1
 
@@ -36,7 +32,7 @@ print
 
 #print unique attributes
 attrs = {}
-for row in generate():
+for row in yelprows(fpath):
     for k,v in row['attributes'].iteritems():
         attrs.setdefault(str(type(v)), set([])).add(k)
 print "Number of unique attrs: %d"%len(attrs)
@@ -49,7 +45,7 @@ nHours = 0
 sattrs = ['Good For', 'Ambience']
 N = [0]*len(sattrs)
 per_attr_cnt = [{}, {}]
-for row in generate():
+for row in yelprows(fpath):
     attrs = row['attributes']
 
     for i, k in enumerate(sattrs):
@@ -58,7 +54,7 @@ for row in generate():
             N[i] = N[i] + 1
 
         for k,v in gf.iteritems():
-            if v==True:
+            if v == True:
                 per_attr_cnt[i][k] = per_attr_cnt[i].setdefault(k, 0) + 1
 
 for i,k in enumerate(sattrs):
