@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 from __future__ import print_function
-import collections
+from collections import deque
 import json
 import yelp
 import os
@@ -9,47 +9,46 @@ from pprint import pprint
 import sys
 
 
-class CategoryTree(object):
-    def __init__(self, io):
-        self.categories = [yelp.category.Category(**c) for c in json.load(io)]
+def search_category_tree(root, alias=None, title=None):
+    if alias is None and title is None:
+        return None
 
-    def __repr__(self):
-        return "%s(categories=%r)" % (
-            self.__class__.__name__,
-            self.categories
-        )
+    if alias is not None and title is not None:
+        raise RuntimeError("Cannot search for both title and alias")
 
-    def search(self, alias=None, title=None):
-        if alias is None and title is None:
-            return None
-
-        if alias is not None and title is not None:
-            raise RuntimeError("Cannot search for both title and alias")
-
-        categoryStack = [category for category in self.categories]
+    categoryStack = [category for category in root.category]
+    try:
+        top = categoryStack.pop()
+    except IndexError:
+        top = None
+    while top is not None:
+        if alias is not None and top.alias == alias:
+            return top
+        elif title is not None and top.title == title:
+            return top
+        categoryStack.extend([category for category in top.category])
         try:
             top = categoryStack.pop()
         except IndexError:
             top = None
-        while top is not None:
-            if alias is not None and top.alias == alias:
-                return top
-            elif title is not None and top.title == title:
-                return top
-            categoryStack.extend([category for category in top.category])
-            try:
-                top = categoryStack.pop()
-            except IndexError:
-                top = None
+
+def enumerate_category_tree(root):
+    categories = [("Category", "Parent", "Business Count")]
+    categoryQueue = deque([(root, None)])
+
+    while len(categoryQueue) != 0:
+        node, parent_title = categoryQueue.popleft()
+        categories.append((node.title, parent_title, node.business_count))
+        [categoryQueue.append((category, node.title)) for category in node.category]
+
+    return categories
 
 
-class CategoryTreeEncoder(json.JSONEncoder):
+class CategoryEncoder(json.JSONEncoder):
     """A JSONEncoder for CategoryTree.
     """
     def default(self, obj):
-        if isinstance(obj, CategoryTree):
-            return [category for category in obj.categories]
-        elif isinstance(obj, yelp.category.Category):
+        if isinstance(obj, yelp.category.Category):
             return {'alias': obj.alias,
                     'title': obj.title,
                     'business_count': obj.business_count,
@@ -179,7 +178,9 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # 1. create category tree
-    ct = CategoryTree(args.categories)
+    root = yelp.category.Category(alias="root",
+                                  title="Root",
+                                  category=json.load(args.categories))
 
     # 2. count each business in each category and sub-category
     businesses = []
@@ -192,7 +193,7 @@ if __name__ == "__main__":
             category_title = normalize_category_title(category_title)
 
             try:
-                category = ct.search(title=category_title)
+                category = search_category_tree(root, title=category_title)
                 category.businesses.add(business)
             except AttributeError:
                 # ignore all unknown categories
@@ -200,4 +201,11 @@ if __name__ == "__main__":
                 pass
 
     # 3. output category tree with business counts as JSON
-    json.dump(ct, args.output, cls=CategoryTreeEncoder, indent=2, separators=(',', ': '))
+    # Each row in the data table describes one node (a rectangle in the graph). Each node (except the root node) has one or more parent nodes. Each node is sized and colored according to its values relative to the other nodes currently shown.
+    # The data table should have four columns in the following format:
+    #     Column 0 - [string] An ID for this node. It can be any valid JavaScript string, including spaces, and any length that a string can hold. This value is displayed as the node header.
+    #     Column 1 - [string] - The ID of the parent node. If this is a root node, leave this blank. Only one root is allowed per treemap.
+    #     Column 2 - [number] - The size of the node. Any positive value is allowed. This value determines the size of the node, computed relative to all other nodes currently shown. For non-leaf nodes, this value is ignored and calculated from the size of all its children.
+    #     Column 3 - [optional, number] - An optional value used to calculate a color for this node. Any value, positive or negative, is allowed. The color value is first recomputed on a scale from minColorValue to maxColorValue, and then the node is assigned a color from the gradient between minColor and maxColor.
+    # json.dump(root.category, args.output, cls=CategoryEncoder, indent=2, separators=(',', ': '))
+    json.dump(enumerate_category_tree(root), args.output, indent=2, separators=(',', ': '))
