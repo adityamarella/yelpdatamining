@@ -13,6 +13,7 @@ class CategoryTree(object):
     def __init__(self, cid = -1, title=""):
         self.category_id = cid
         self.title = title
+        self.parent = None
         self.children = []
 
     def __repr__(self):
@@ -34,11 +35,10 @@ class CategoryTreeEncoder(json.JSONEncoder):
         # Let the base class default method raise the TypeError
         return super().default(self, obj)
 
-class QueryHelper(object):
+class CategoryTreeCreator(object):
 
-    def __init__(self, yelp_db_path="yelp.db"):
-        self.conn = sqlite3.connect(yelp_db_path)
-        self.cursor = self.conn.cursor()
+    def __init__(self, query_helper=None):
+        self.query_helper = query_helper
 
     def create_category_tree(self):
         """
@@ -49,8 +49,7 @@ class QueryHelper(object):
                     C.id, C.title, cs.subcategory_id\
                 FROM categories as C \
                     LEFT OUTER JOIN categories_subcategories as cs ON C.id = cs.category_id"
-        self.cursor.execute(stmt)
-        rows = self.cursor.fetchall()
+        rows = self.query_helper.run_query(stmt)
 
         categories = {}
         for row in rows:
@@ -66,7 +65,9 @@ class QueryHelper(object):
             tree = v["tree"]
             for cid in values:
                 subcategories_union.add(cid)
-                tree.children.append(categories[cid]['tree'])
+                child_node = categories[cid]['tree']
+                tree.children.append(child_node)
+        
 
         #find the top level nodes of the category hierarchy
         #Top level nodes can be computed by doing a set-difference between
@@ -80,8 +81,46 @@ class QueryHelper(object):
         for cid in top_level_nodes:
             root.children.append(categories[cid]['tree'])
 
+        #set parent node
+        self.setparent(root, None)
+
+        #remove child if child.parent != currentnode
+        self.deduplicate(root)
+
         return root
 
+    def setparent(self, node, parent):
+        """
+        do inorder traversal to set the parent; 
+        all child nodes should have correct parent before
+        the current node has a parent
+        """
+        for child in node.children:
+            self.setparent(child, node)
+
+        node.parent = parent
+
+    def deduplicate(self, node):
+        node.children = [ child for child in node.children if child.parent==node]
+        for child in node.children:
+            self.deduplicate(child)
+
+class QueryHelper(object):
+
+    def __init__(self, yelp_db_path="yelp.db"):
+        self.conn = sqlite3.connect(yelp_db_path)
+        self.cursor = self.conn.cursor()
+
+    def close(self):
+        self.conn.close()
+
+    def run_query(self, query, bindings=[]):
+        self.cursor.execute(query, bindings)
+        rows = self.cursor.fetchall()
+        return rows
+
+    def commit(self):
+        self.conn.commit()
 
 if __name__=='__main__':
     import argparse
@@ -93,5 +132,8 @@ if __name__=='__main__':
     args = parser.parse_args()
 
     helper = QueryHelper(args.database)
-    root = helper.create_category_tree()
+    tree_creator = CategoryTreeCreator(helper)
+    root = tree_creator.create_category_tree()
+    helper.close()
+
     json.dump(root.children, args.output, cls=CategoryTreeEncoder)
