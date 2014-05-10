@@ -5,119 +5,114 @@
     "Business Count"
   ],
   [
-    "Root",
+    "All",
     null,
     0
   ],
   [
     "Active Life",
-    "Root",
+    "All",
     695
   ],
   [
     "Arts & Entertainment",
-    "Root",
+    "All",
     385
   ],
   [
-    "Automotive",
-    "Root",
-    859
-  ],
-  [
-    "Beauty and Spas",
-    "Root",
-    1109
-  ],
-  [
-    "Education",
-    "Root",
-    117
-  ],
-  [
-    "Event Planning & Services",
-    "Root",
-    588
-  ],
-  [
-    "Financial Services",
-    "Root",
-    153
-  ],
-  [
-    "Food",
-    "Root",
-    2091
-  ],
-  [
-    "Health and Medical",
-    "Root",
-    815
-  ],
-  [
-    "Home Services",
-    "Root",
-    761
-  ],
-  [
-    "Hotels & Travel",
-    "Root",
-    495
-  ],
-  [
-    "Local Flavor",
-    "Root",
-    54
-  ],
-  [
-    "Local Services",
-    "Root",
-    540
-  ],
-  [
-    "Mass Media",
-    "Root",
-    25
-  ],
-  [
-    "Nightlife",
-    "Root",
-    752
-  ],
-  [
-    "Pets",
-    "Root",
-    308
-  ],
-  [
-    "Professional Services",
-    "Root",
-    161
-  ],
-  [
-    "Public Services & Government",
-    "Root",
-    112
-  ],
-  [
-    "Real Estate",
-    "Root",
-    216
-  ],
-  [
     "Religious Organizations",
-    "Root",
+    "All",
     42
   ],
   [
-    "Restaurants",
-    "Root",
-    5556
+    "Automotive",
+    "All",
+    859
+  ],
+  [
+    "Beauty & Spas",
+    "All",
+    1109
   ],
   [
     "Shopping",
-    "Root",
+    "All",
     2499
+  ],
+  [
+    "Nightlife",
+    "All",
+    752
+  ],
+  [
+    "Local Services",
+    "All",
+    540
+  ],
+  [
+    "Local Flavor",
+    "All",
+    54
+  ],
+  [
+    "Pets",
+    "All",
+    308
+  ],
+  [
+    "Restaurants",
+    "All",
+    5556
+  ],
+  [
+    "Professional Services",
+    "All",
+    161
+  ],
+  [
+    "Education",
+    "All",
+    117
+  ],
+  [
+    "Home Services",
+    "All",
+    761
+  ],
+  [
+    "Event Planning & Services",
+    "All",
+    588
+  ],
+  [
+    "Food",
+    "All",
+    2091
+  ],
+  [
+    "Mass Media",
+    "All",
+    25
+  ],
+  [
+    "Hotels & Travel",
+    "All",
+    495
+  ],
+  [
+    "Public Services & Government",
+    "All",
+    112
+  ],
+  [
+    "Financial Services",
+    "All",
+    153
+  ],
+  [
+    "Health & Medical",
+    "All",
+    815
   ],
   [
     "Amateur Sports Teams",
@@ -138,11 +133,6 @@
     "Archery",
     "Active Life",
     2
-  ],
-  [
-    "Beaches",
-    "Active Life",
-    0
   ],
   [
     "Bike Rentals",
@@ -175,19 +165,9 @@
     7
   ],
   [
-    "Fishing",
-    "Active Life",
-    0
-  ],
-  [
     "Fitness & Instruction",
     "Active Life",
     281
-  ],
-  [
-    "Go Karts",
-    "Active Life",
-    1
   ],
   [
     "Golf",
@@ -200,19 +180,29 @@
     8
   ],
   [
+    "Gymnastics",
+    "Active Life",
+    2
+  ],
+  [
+    "Gyms",
+    "Active Life",
+    139
+  ],
+  [
     "Hiking",
     "Active Life",
     29
   ],
   [
-    "Horse Racing",
-    "Active Life",
-    2
-  ],
-  [
     "Horseback Riding",
     "Active Life",
     13
+  ],
+  [
+    "Hot Air Balloons",
+    "Active Life",
+    4
   ],
   [
     "Lakes",
@@ -223,6 +213,11 @@
     "Leisure Centers",
     "Active Life",
     2
+  ],
+  [
+    "Martial Arts",
+    "Active Life",
+    22
   ],
   [
     "Mini Golf",
@@ -245,6 +240,11 @@
     101
   ],
   [
+    "Pilates",
+    "Active Life",
+    11
+  ],
+  [
     "Playgrounds",
     "Active Life",
     17
@@ -260,9 +260,14 @@
     6
   ],
   [
-    "Rock Climbing",
+    "Scuba Diving",
     "Active Life",
-    0
+    3
+  ],
+  [
+    "Skate Parks",
+    "Active Life",
+    3
   ],
   [
     "Skating Rinks",
@@ -290,19 +295,29 @@
     2
   ],
   [
-    "Surfing",
-    "Active Life",
-    0
-  ],
-  [
     "Swimming Pools",
     "Active Life",
     20
   ],
   [
+    "Tai Chi",
+    "Active Life",
+    1
+  ],
+  [
     "Tennis",
     "Active Life",
     7
+  ],
+  [
+    "Trainers",
+    "Active Life",
+    92
+  ],
+  [
+    "Yoga",
+    "Active Life",
+    60
   ],
   [
     "Zoos",
@@ -330,9 +345,19 @@
     56
   ],
   [
+    "Cultural Center",
+    "Arts & Entertainment",
+    2
+  ],
+  [
     "Festivals",
     "Arts & Entertainment",
     33
+  ],
+  [
+    "Go Karts",
+    "Arts & Entertainment",
+    1
   ],
   [
     "Museums",
@@ -360,6 +385,11 @@
     2
   ],
   [
+    "Race Tracks",
+    "Arts & Entertainment",
+    1
+  ],
+  [
     "Social Clubs",
     "Arts & Entertainment",
     3
@@ -368,6 +398,21 @@
     "Stadiums & Arenas",
     "Arts & Entertainment",
     27
+  ],
+  [
+    "Ticket Sales",
+    "Arts & Entertainment",
+    2
+  ],
+  [
+    "Churches",
+    "Religious Organizations",
+    37
+  ],
+  [
+    "Hindu Temples",
+    "Religious Organizations",
+    1
   ],
   [
     "Auto Detailing",
@@ -440,6 +485,11 @@
     4
   ],
   [
+    "Registration Services",
+    "Automotive",
+    1
+  ],
+  [
     "Smog Check Stations",
     "Automotive",
     6
@@ -460,679 +510,504 @@
     8
   ],
   [
+    "Wheel & Rim Repair",
+    "Automotive",
+    1
+  ],
+  [
     "Windshield Installation & Repair",
     "Automotive",
     17
   ],
   [
     "Barbers",
-    "Beauty and Spas",
+    "Beauty & Spas",
     105
   ],
   [
     "Day Spas",
-    "Beauty and Spas",
+    "Beauty & Spas",
     107
   ],
   [
     "Eyelash Service",
-    "Beauty and Spas",
+    "Beauty & Spas",
     24
   ],
   [
     "Hair Removal",
-    "Beauty and Spas",
+    "Beauty & Spas",
     81
   ],
   [
     "Hair Salons",
-    "Beauty and Spas",
+    "Beauty & Spas",
     285
   ],
   [
+    "Hair Stylists",
+    "Beauty & Spas",
+    61
+  ],
+  [
+    "Laser Hair Removal",
+    "Beauty & Spas",
+    18
+  ],
+  [
     "Makeup Artists",
-    "Beauty and Spas",
+    "Beauty & Spas",
     30
   ],
   [
     "Massage",
-    "Beauty and Spas",
+    "Beauty & Spas",
     89
   ],
   [
+    "Men's Hair Salons",
+    "Beauty & Spas",
+    20
+  ],
+  [
     "Nail Salons",
-    "Beauty and Spas",
+    "Beauty & Spas",
     307
   ],
   [
-    "Piercing",
-    "Beauty and Spas",
-    6
-  ],
-  [
-    "Rolfing",
-    "Beauty and Spas",
+    "Permanent Makeup",
+    "Beauty & Spas",
     1
   ],
   [
+    "Piercing",
+    "Beauty & Spas",
+    6
+  ],
+  [
     "Skin Care",
-    "Beauty and Spas",
+    "Beauty & Spas",
     104
   ],
   [
     "Tanning",
-    "Beauty and Spas",
+    "Beauty & Spas",
     53
   ],
   [
     "Tattoo",
-    "Beauty and Spas",
+    "Beauty & Spas",
     17
   ],
   [
-    "Adult Education",
-    "Education",
-    4
-  ],
-  [
-    "Colleges & Universities",
-    "Education",
-    20
-  ],
-  [
-    "Educational Services",
-    "Education",
-    2
-  ],
-  [
-    "Elementary Schools",
-    "Education",
-    16
-  ],
-  [
-    "Middle Schools & High Schools",
-    "Education",
-    17
-  ],
-  [
-    "Preschools",
-    "Education",
-    20
-  ],
-  [
-    "Private Tutors",
-    "Education",
-    1
-  ],
-  [
-    "Special Education",
-    "Education",
-    5
-  ],
-  [
-    "Specialty Schools",
-    "Education",
-    50
-  ],
-  [
-    "Test Preparation",
-    "Education",
-    0
-  ],
-  [
-    "Tutoring Centers",
-    "Education",
-    2
-  ],
-  [
-    "Boat Charters",
-    "Event Planning & Services",
-    2
-  ],
-  [
-    "Caterers",
-    "Event Planning & Services",
-    43
-  ],
-  [
-    "Clowns",
-    "Event Planning & Services",
-    1
-  ],
-  [
-    "DJs",
-    "Event Planning & Services",
-    10
-  ],
-  [
-    "Magicians",
-    "Event Planning & Services",
-    2
-  ],
-  [
-    "Officiants",
-    "Event Planning & Services",
-    2
-  ],
-  [
-    "Party & Event Planning",
-    "Event Planning & Services",
-    40
-  ],
-  [
-    "Party Supplies",
-    "Event Planning & Services",
-    23
-  ],
-  [
-    "Personal Chefs",
-    "Event Planning & Services",
-    1
-  ],
-  [
-    "Photographers",
-    "Event Planning & Services",
-    39
-  ],
-  [
-    "Venues & Event Spaces",
-    "Event Planning & Services",
-    97
-  ],
-  [
-    "Videographers",
-    "Event Planning & Services",
-    4
-  ],
-  [
-    "Wedding Planning",
-    "Event Planning & Services",
-    21
-  ],
-  [
-    "Banks & Credit Unions",
-    "Financial Services",
-    94
-  ],
-  [
-    "Check Cashing/Pay-day Loans",
-    "Financial Services",
-    2
-  ],
-  [
-    "Financial Advising",
-    "Financial Services",
-    15
-  ],
-  [
-    "Insurance",
-    "Financial Services",
-    30
-  ],
-  [
-    "Investing",
-    "Financial Services",
-    4
-  ],
-  [
-    "Tax Services",
-    "Financial Services",
-    15
-  ],
-  [
-    "Bagels",
-    "Food",
-    68
-  ],
-  [
-    "Bakeries",
-    "Food",
-    203
-  ],
-  [
-    "Beer, Wine & Spirits",
-    "Food",
-    102
-  ],
-  [
-    "Breweries",
-    "Food",
-    31
-  ],
-  [
-    "Butcher",
-    "Food",
-    2
-  ],
-  [
-    "Coffee & Tea",
-    "Food",
-    404
-  ],
-  [
-    "Convenience Stores",
-    "Food",
-    193
-  ],
-  [
-    "Desserts",
-    "Food",
-    115
-  ],
-  [
-    "Do-It-Yourself Food",
-    "Food",
-    11
-  ],
-  [
-    "Donuts",
-    "Food",
-    79
-  ],
-  [
-    "Farmers Market",
-    "Food",
-    51
-  ],
-  [
-    "Food Delivery Services",
-    "Food",
-    24
-  ],
-  [
-    "Grocery",
-    "Food",
-    408
-  ],
-  [
-    "Ice Cream & Frozen Yogurt",
-    "Food",
-    294
-  ],
-  [
-    "Internet Cafes",
-    "Food",
-    3
-  ],
-  [
-    "Juice Bars & Smoothies",
-    "Food",
-    70
-  ],
-  [
-    "Specialty Food",
-    "Food",
-    216
-  ],
-  [
-    "Street Vendors",
-    "Food",
-    19
-  ],
-  [
-    "Tea Rooms",
-    "Food",
-    8
-  ],
-  [
-    "Wineries",
-    "Food",
-    8
-  ],
-  [
-    "Acupuncture",
-    "Health and Medical",
-    19
-  ],
-  [
-    "Cannabis Clinics",
-    "Health and Medical",
-    3
-  ],
-  [
-    "Chiropractors",
-    "Health and Medical",
-    76
-  ],
-  [
-    "Counseling & Mental Health",
-    "Health and Medical",
-    9
-  ],
-  [
-    "Dentists",
-    "Health and Medical",
-    209
-  ],
-  [
-    "Doctors",
-    "Health and Medical",
-    250
-  ],
-  [
-    "Home Health Care",
-    "Health and Medical",
-    3
-  ],
-  [
-    "Hospice",
-    "Health and Medical",
-    1
-  ],
-  [
-    "Hospitals",
-    "Health and Medical",
-    21
-  ],
-  [
-    "Laser Eye Surgery/Lasik",
-    "Health and Medical",
+    "Adult",
+    "Shopping",
     6
   ],
   [
-    "Massage Therapy",
-    "Health and Medical",
-    29
+    "Antiques",
+    "Shopping",
+    46
   ],
   [
-    "Medical Centers",
-    "Health and Medical",
+    "Art Galleries",
+    "Shopping",
     52
   ],
   [
-    "Medical Spas",
-    "Health and Medical",
-    18
+    "Arts & Crafts",
+    "Shopping",
+    119
   ],
   [
-    "Midwives",
-    "Health and Medical",
-    2
+    "Baby Gear & Furniture",
+    "Shopping",
+    40
   ],
   [
-    "Nutritionists",
-    "Health and Medical",
-    10
+    "Books, Mags, Music & Video",
+    "Shopping",
+    129
   ],
   [
-    "Optometrists",
-    "Health and Medical",
-    73
+    "Bookstores",
+    "Shopping",
+    52
   ],
   [
-    "Physical Therapy",
-    "Health and Medical",
-    43
+    "Bridal",
+    "Shopping",
+    17
   ],
   [
-    "Reflexology",
-    "Health and Medical",
-    10
-  ],
-  [
-    "Rehabilitation Center",
-    "Health and Medical",
-    2
-  ],
-  [
-    "Retirement Homes",
-    "Health and Medical",
-    2
-  ],
-  [
-    "Speech Therapists",
-    "Health and Medical",
-    0
-  ],
-  [
-    "Traditional Chinese Medicine",
-    "Health and Medical",
-    3
-  ],
-  [
-    "Urgent Care",
-    "Health and Medical",
-    45
-  ],
-  [
-    "Weight Loss Centers",
-    "Health and Medical",
-    18
-  ],
-  [
-    "Building Supplies",
-    "Home Services",
-    25
-  ],
-  [
-    "Carpet Installation",
-    "Home Services",
-    5
-  ],
-  [
-    "Carpeting",
-    "Home Services",
-    13
-  ],
-  [
-    "Contractors",
-    "Home Services",
-    73
-  ],
-  [
-    "Electricians",
-    "Home Services",
-    22
-  ],
-  [
-    "Flooring",
-    "Home Services",
-    26
-  ],
-  [
-    "Garage Door Services",
-    "Home Services",
-    7
-  ],
-  [
-    "Gardeners",
-    "Home Services",
-    9
-  ],
-  [
-    "Handyman",
-    "Home Services",
-    20
-  ],
-  [
-    "Heating & Air Conditioning/HVAC",
-    "Home Services",
-    62
-  ],
-  [
-    "Home Cleaning",
-    "Home Services",
-    41
-  ],
-  [
-    "Home Inspectors",
-    "Home Services",
-    8
-  ],
-  [
-    "Home Organization",
-    "Home Services",
-    1
-  ],
-  [
-    "Home Theatre Installation",
-    "Home Services",
-    6
-  ],
-  [
-    "Interior Design",
-    "Home Services",
-    21
-  ],
-  [
-    "Keys & Locksmiths",
-    "Home Services",
-    19
-  ],
-  [
-    "Landscape Architects",
-    "Home Services",
-    3
-  ],
-  [
-    "Landscaping",
-    "Home Services",
-    37
-  ],
-  [
-    "Lighting Fixtures & Equipment",
-    "Home Services",
-    16
-  ],
-  [
-    "Masonry/Concrete",
-    "Home Services",
-    4
-  ],
-  [
-    "Movers",
-    "Home Services",
-    32
-  ],
-  [
-    "Painters",
-    "Home Services",
-    15
-  ],
-  [
-    "Plumbing",
-    "Home Services",
-    45
-  ],
-  [
-    "Pool Cleaners",
-    "Home Services",
-    30
-  ],
-  [
-    "Roofing",
-    "Home Services",
-    8
-  ],
-  [
-    "Security Systems",
-    "Home Services",
-    10
-  ],
-  [
-    "Shades & Blinds",
-    "Home Services",
-    11
-  ],
-  [
-    "Solar Installation",
-    "Home Services",
-    4
-  ],
-  [
-    "Television Service Providers",
-    "Home Services",
+    "Comic Books",
+    "Shopping",
     12
   ],
   [
-    "Tree Services",
-    "Home Services",
-    9
-  ],
-  [
-    "Window Washing",
-    "Home Services",
-    6
-  ],
-  [
-    "Windows Installation",
-    "Home Services",
-    14
-  ],
-  [
-    "Airports",
-    "Hotels & Travel",
-    10
-  ],
-  [
-    "Bed & Breakfast",
-    "Hotels & Travel",
-    5
-  ],
-  [
-    "Campgrounds",
-    "Hotels & Travel",
-    3
-  ],
-  [
-    "Car Rental",
-    "Hotels & Travel",
-    38
-  ],
-  [
-    "Guest Houses",
-    "Hotels & Travel",
-    0
-  ],
-  [
-    "Hostels",
-    "Hotels & Travel",
-    0
-  ],
-  [
-    "Hotels",
-    "Hotels & Travel",
-    341
-  ],
-  [
-    "Motorcycle Rental",
-    "Hotels & Travel",
-    0
-  ],
-  [
-    "RV Rental",
-    "Hotels & Travel",
-    1
-  ],
-  [
-    "Ski Resorts",
-    "Hotels & Travel",
-    0
-  ],
-  [
-    "Tours",
-    "Hotels & Travel",
-    34
-  ],
-  [
-    "Transportation",
-    "Hotels & Travel",
-    47
-  ],
-  [
-    "Travel Services",
-    "Hotels & Travel",
+    "Computers",
+    "Shopping",
     16
   ],
   [
-    "Vacation Rental Agents",
-    "Hotels & Travel",
-    0
+    "Cosmetics & Beauty Supply",
+    "Shopping",
+    157
   ],
   [
-    "Vacation Rentals",
-    "Hotels & Travel",
+    "Costumes",
+    "Shopping",
+    13
+  ],
+  [
+    "Discount Store",
+    "Shopping",
+    28
+  ],
+  [
+    "Drugstores",
+    "Shopping",
+    195
+  ],
+  [
+    "Electronics",
+    "Shopping",
+    80
+  ],
+  [
+    "Eyewear & Opticians",
+    "Shopping",
+    71
+  ],
+  [
+    "Fabric Stores",
+    "Shopping",
+    23
+  ],
+  [
+    "Fashion",
+    "Shopping",
+    701
+  ],
+  [
+    "Flowers & Gifts",
+    "Shopping",
+    127
+  ],
+  [
+    "Formal Wear",
+    "Shopping",
+    10
+  ],
+  [
+    "Framing",
+    "Shopping",
+    5
+  ],
+  [
+    "Gift Shops",
+    "Shopping",
+    7
+  ],
+  [
+    "Guns & Ammo",
+    "Shopping",
+    11
+  ],
+  [
+    "Hats",
+    "Shopping",
     1
+  ],
+  [
+    "Hobby Shops",
+    "Shopping",
+    46
+  ],
+  [
+    "Home & Garden",
+    "Shopping",
+    378
+  ],
+  [
+    "Home Decor",
+    "Shopping",
+    80
+  ],
+  [
+    "Hot Tub & Pool",
+    "Shopping",
+    22
+  ],
+  [
+    "Jewelry",
+    "Shopping",
+    110
+  ],
+  [
+    "Kitchen & Bath",
+    "Shopping",
+    31
+  ],
+  [
+    "Knitting Supplies",
+    "Shopping",
+    1
+  ],
+  [
+    "Leather Goods",
+    "Shopping",
+    10
+  ],
+  [
+    "Lingerie",
+    "Shopping",
+    28
+  ],
+  [
+    "Luggage",
+    "Shopping",
+    5
+  ],
+  [
+    "Maternity Wear",
+    "Shopping",
+    3
+  ],
+  [
+    "Mattresses",
+    "Shopping",
+    16
+  ],
+  [
+    "Medical Supplies",
+    "Shopping",
+    1
+  ],
+  [
+    "Men's Clothing",
+    "Shopping",
+    118
+  ],
+  [
+    "Mobile Phones",
+    "Shopping",
+    102
+  ],
+  [
+    "Music & DVDs",
+    "Shopping",
+    30
+  ],
+  [
+    "Musical Instruments & Teachers",
+    "Shopping",
+    29
+  ],
+  [
+    "Nurseries & Gardening",
+    "Shopping",
+    60
+  ],
+  [
+    "Office Equipment",
+    "Shopping",
+    41
+  ],
+  [
+    "Outlet Stores",
+    "Shopping",
+    18
+  ],
+  [
+    "Pawn Shops",
+    "Shopping",
+    10
+  ],
+  [
+    "Personal Shopping",
+    "Shopping",
+    6
+  ],
+  [
+    "Photography Stores & Services",
+    "Shopping",
+    10
+  ],
+  [
+    "Plus Size Fashion",
+    "Shopping",
+    1
+  ],
+  [
+    "Rugs",
+    "Shopping",
+    1
+  ],
+  [
+    "Shoe Stores",
+    "Shopping",
+    77
+  ],
+  [
+    "Shopping Centers",
+    "Shopping",
+    37
+  ],
+  [
+    "Sporting Goods",
+    "Shopping",
+    157
+  ],
+  [
+    "Sports Wear",
+    "Shopping",
+    42
+  ],
+  [
+    "Swimwear",
+    "Shopping",
+    5
+  ],
+  [
+    "Thrift Stores",
+    "Shopping",
+    82
+  ],
+  [
+    "Tobacco Shops",
+    "Shopping",
+    60
+  ],
+  [
+    "Toy Stores",
+    "Shopping",
+    35
+  ],
+  [
+    "Uniforms",
+    "Shopping",
+    3
+  ],
+  [
+    "Used, Vintage & Consignment",
+    "Shopping",
+    72
+  ],
+  [
+    "Videos & Video Game Rental",
+    "Shopping",
+    32
+  ],
+  [
+    "Vinyl Records",
+    "Shopping",
+    6
+  ],
+  [
+    "Watches",
+    "Shopping",
+    18
+  ],
+  [
+    "Wholesale Stores",
+    "Shopping",
+    28
+  ],
+  [
+    "Wigs",
+    "Shopping",
+    4
+  ],
+  [
+    "Women's Clothing",
+    "Shopping",
+    227
+  ],
+  [
+    "Adult Entertainment",
+    "Nightlife",
+    8
+  ],
+  [
+    "Bars",
+    "Nightlife",
+    628
+  ],
+  [
+    "Cocktail Bars",
+    "Nightlife",
+    6
+  ],
+  [
+    "Comedy Clubs",
+    "Nightlife",
+    5
+  ],
+  [
+    "Dance Clubs",
+    "Nightlife",
+    43
+  ],
+  [
+    "Dive Bars",
+    "Nightlife",
+    55
+  ],
+  [
+    "Gay Bars",
+    "Nightlife",
+    29
+  ],
+  [
+    "Hookah Bars",
+    "Nightlife",
+    9
+  ],
+  [
+    "Jazz & Blues",
+    "Nightlife",
+    11
+  ],
+  [
+    "Karaoke",
+    "Nightlife",
+    24
+  ],
+  [
+    "Lounges",
+    "Nightlife",
+    103
+  ],
+  [
+    "Music Venues",
+    "Nightlife",
+    71
+  ],
+  [
+    "Piano Bars",
+    "Nightlife",
+    2
+  ],
+  [
+    "Pool Halls",
+    "Nightlife",
+    13
+  ],
+  [
+    "Pubs",
+    "Nightlife",
+    57
+  ],
+  [
+    "Sports Bars",
+    "Nightlife",
+    173
+  ],
+  [
+    "Wine Bars",
+    "Nightlife",
+    64
   ],
   [
     "Appliances & Repair",
@@ -1195,9 +1070,19 @@
     39
   ],
   [
-    "Junk Removal and Hauling",
+    "Jewelry Repair",
+    "Local Services",
+    3
+  ],
+  [
+    "Junk Removal & Hauling",
     "Local Services",
     1
+  ],
+  [
+    "Mobile Phone Repair",
+    "Local Services",
+    8
   ],
   [
     "Notaries",
@@ -1255,79 +1140,19 @@
     20
   ],
   [
-    "Snow Removal",
-    "Local Services",
-    0
-  ],
-  [
     "Watch Repair",
     "Local Services",
     10
   ],
   [
-    "Print Media",
-    "Mass Media",
-    9
-  ],
-  [
-    "Radio Stations",
-    "Mass Media",
-    13
-  ],
-  [
-    "Television Stations",
-    "Mass Media",
-    2
-  ],
-  [
-    "Adult Entertainment",
-    "Nightlife",
-    8
-  ],
-  [
-    "Bars",
-    "Nightlife",
-    628
-  ],
-  [
-    "Comedy Clubs",
-    "Nightlife",
-    5
-  ],
-  [
-    "Dance Clubs",
-    "Nightlife",
-    43
-  ],
-  [
-    "Jazz & Blues",
-    "Nightlife",
+    "Yelp Events",
+    "Local Flavor",
     11
-  ],
-  [
-    "Karaoke",
-    "Nightlife",
-    24
-  ],
-  [
-    "Music Venues",
-    "Nightlife",
-    71
-  ],
-  [
-    "Pool Halls",
-    "Nightlife",
-    13
   ],
   [
     "Animal Shelters",
     "Pets",
     11
-  ],
-  [
-    "Horse Boarding",
-    "Pets",
-    0
   ],
   [
     "Pet Services",
@@ -1340,174 +1165,14 @@
     104
   ],
   [
+    "Pet Training",
+    "Pets",
+    44
+  ],
+  [
     "Veterinarians",
     "Pets",
     101
-  ],
-  [
-    "Accountants",
-    "Professional Services",
-    21
-  ],
-  [
-    "Advertising",
-    "Professional Services",
-    6
-  ],
-  [
-    "Architects",
-    "Professional Services",
-    1
-  ],
-  [
-    "Boat Repair",
-    "Professional Services",
-    3
-  ],
-  [
-    "Career Counseling",
-    "Professional Services",
-    3
-  ],
-  [
-    "Employment Agencies",
-    "Professional Services",
-    7
-  ],
-  [
-    "Graphic Design",
-    "Professional Services",
-    26
-  ],
-  [
-    "Internet Service Providers",
-    "Professional Services",
-    37
-  ],
-  [
-    "Lawyers",
-    "Professional Services",
-    20
-  ],
-  [
-    "Life Coach",
-    "Professional Services",
-    4
-  ],
-  [
-    "Marketing",
-    "Professional Services",
-    8
-  ],
-  [
-    "Office Cleaning",
-    "Professional Services",
-    10
-  ],
-  [
-    "Private Investigation",
-    "Professional Services",
-    2
-  ],
-  [
-    "Public Relations",
-    "Professional Services",
-    1
-  ],
-  [
-    "Video/Film Production",
-    "Professional Services",
-    2
-  ],
-  [
-    "Web Design",
-    "Professional Services",
-    19
-  ],
-  [
-    "Departments of Motor Vehicles",
-    "Public Services & Government",
-    10
-  ],
-  [
-    "Landmarks & Historical Buildings",
-    "Public Services & Government",
-    14
-  ],
-  [
-    "Libraries",
-    "Public Services & Government",
-    30
-  ],
-  [
-    "Police Departments",
-    "Public Services & Government",
-    1
-  ],
-  [
-    "Post Offices",
-    "Public Services & Government",
-    37
-  ],
-  [
-    "Apartments",
-    "Real Estate",
-    127
-  ],
-  [
-    "Home Staging",
-    "Real Estate",
-    1
-  ],
-  [
-    "Mortgage Brokers",
-    "Real Estate",
-    25
-  ],
-  [
-    "Property Management",
-    "Real Estate",
-    17
-  ],
-  [
-    "Real Estate Agents",
-    "Real Estate",
-    33
-  ],
-  [
-    "Real Estate Services",
-    "Real Estate",
-    27
-  ],
-  [
-    "University Housing",
-    "Real Estate",
-    0
-  ],
-  [
-    "Buddhist Temples",
-    "Religious Organizations",
-    0
-  ],
-  [
-    "Churches",
-    "Religious Organizations",
-    37
-  ],
-  [
-    "Hindu Temples",
-    "Religious Organizations",
-    1
-  ],
-  [
-    "Mosques",
-    "Religious Organizations",
-    0
-  ],
-  [
-    "Synagogues",
-    "Religious Organizations",
-    0
   ],
   [
     "Afghan",
@@ -1545,14 +1210,9 @@
     119
   ],
   [
-    "Basque",
+    "Beer Hall",
     "Restaurants",
-    3
-  ],
-  [
-    "Belgian",
-    "Restaurants",
-    0
+    1
   ],
   [
     "Brasseries",
@@ -1625,6 +1285,11 @@
     346
   ],
   [
+    "Comfort Food",
+    "Restaurants",
+    17
+  ],
+  [
     "Creperies",
     "Restaurants",
     10
@@ -1638,6 +1303,11 @@
     "Delis",
     "Restaurants",
     185
+  ],
+  [
+    "Dim Sum",
+    "Restaurants",
+    7
   ],
   [
     "Diners",
@@ -1710,29 +1380,14 @@
     30
   ],
   [
-    "Himalayan/Nepalese",
-    "Restaurants",
-    0
-  ],
-  [
     "Hot Dogs",
     "Restaurants",
     71
   ],
   [
-    "Hungarian",
-    "Restaurants",
-    0
-  ],
-  [
     "Indian",
     "Restaurants",
     40
-  ],
-  [
-    "Indonesian",
-    "Restaurants",
-    1
   ],
   [
     "Irish",
@@ -1763,16 +1418,6 @@
     "Latin American",
     "Restaurants",
     32
-  ],
-  [
-    "Live/Raw Food",
-    "Restaurants",
-    2
-  ],
-  [
-    "Malaysian",
-    "Restaurants",
-    0
   ],
   [
     "Mediterranean",
@@ -1820,6 +1465,11 @@
     6
   ],
   [
+    "Pita",
+    "Restaurants",
+    1
+  ],
+  [
     "Pizza",
     "Restaurants",
     589
@@ -1828,11 +1478,6 @@
     "Polish",
     "Restaurants",
     7
-  ],
-  [
-    "Portuguese",
-    "Restaurants",
-    0
   ],
   [
     "Russian",
@@ -1858,11 +1503,6 @@
     "Seafood",
     "Restaurants",
     108
-  ],
-  [
-    "Singaporean",
-    "Restaurants",
-    0
   ],
   [
     "Soul Food",
@@ -1895,6 +1535,11 @@
     124
   ],
   [
+    "Szechuan",
+    "Restaurants",
+    4
+  ],
+  [
     "Taiwanese",
     "Restaurants",
     3
@@ -1925,11 +1570,6 @@
     3
   ],
   [
-    "Ukrainian",
-    "Restaurants",
-    0
-  ],
-  [
     "Vegan",
     "Restaurants",
     26
@@ -1945,194 +1585,979 @@
     68
   ],
   [
-    "Adult",
-    "Shopping",
+    "Accountants",
+    "Professional Services",
+    21
+  ],
+  [
+    "Advertising",
+    "Professional Services",
     6
   ],
   [
-    "Antiques",
-    "Shopping",
-    46
-  ],
-  [
-    "Art Galleries",
-    "Shopping",
-    52
-  ],
-  [
-    "Arts & Crafts",
-    "Shopping",
-    119
-  ],
-  [
-    "Baby Gear & Furniture",
-    "Shopping",
-    40
-  ],
-  [
-    "Books, Mags, Music and Video",
-    "Shopping",
-    129
-  ],
-  [
-    "Bridal",
-    "Shopping",
-    17
-  ],
-  [
-    "Computers",
-    "Shopping",
-    16
-  ],
-  [
-    "Cosmetics & Beauty Supply",
-    "Shopping",
-    157
-  ],
-  [
-    "Discount Store",
-    "Shopping",
-    28
-  ],
-  [
-    "Drugstores",
-    "Shopping",
-    195
-  ],
-  [
-    "Electronics",
-    "Shopping",
-    80
-  ],
-  [
-    "Eyewear & Opticians",
-    "Shopping",
-    71
-  ],
-  [
-    "Fashion",
-    "Shopping",
-    701
-  ],
-  [
-    "Fireworks",
-    "Shopping",
-    0
-  ],
-  [
-    "Flowers & Gifts",
-    "Shopping",
-    127
-  ],
-  [
-    "Guns & Ammo",
-    "Shopping",
-    11
-  ],
-  [
-    "Hobby Shops",
-    "Shopping",
-    46
-  ],
-  [
-    "Home & Garden",
-    "Shopping",
-    378
-  ],
-  [
-    "Jewelry",
-    "Shopping",
-    110
-  ],
-  [
-    "Knitting Supplies",
-    "Shopping",
+    "Architects",
+    "Professional Services",
     1
   ],
   [
-    "Luggage",
-    "Shopping",
+    "Boat Repair",
+    "Professional Services",
+    3
+  ],
+  [
+    "Career Counseling",
+    "Professional Services",
+    3
+  ],
+  [
+    "Employment Agencies",
+    "Professional Services",
+    7
+  ],
+  [
+    "Graphic Design",
+    "Professional Services",
+    26
+  ],
+  [
+    "Lawyers",
+    "Professional Services",
+    20
+  ],
+  [
+    "Life Coach",
+    "Professional Services",
+    4
+  ],
+  [
+    "Marketing",
+    "Professional Services",
+    8
+  ],
+  [
+    "Office Cleaning",
+    "Professional Services",
+    10
+  ],
+  [
+    "Personal Assistants",
+    "Professional Services",
+    1
+  ],
+  [
+    "Personal Injury Law",
+    "Professional Services",
     5
   ],
   [
-    "Mobile Phones",
-    "Shopping",
-    102
+    "Private Investigation",
+    "Professional Services",
+    2
   ],
   [
-    "Musical Instruments & Teachers",
-    "Shopping",
-    29
+    "Real Estate Law",
+    "Professional Services",
+    2
   ],
   [
-    "Office Equipment",
-    "Shopping",
+    "Talent Agencies",
+    "Professional Services",
+    1
+  ],
+  [
+    "Video/Film Production",
+    "Professional Services",
+    2
+  ],
+  [
+    "Web Design",
+    "Professional Services",
+    19
+  ],
+  [
+    "Adult Education",
+    "Education",
+    4
+  ],
+  [
+    "Colleges & Universities",
+    "Education",
+    20
+  ],
+  [
+    "Educational Services",
+    "Education",
+    2
+  ],
+  [
+    "Elementary Schools",
+    "Education",
+    16
+  ],
+  [
+    "Middle Schools & High Schools",
+    "Education",
+    17
+  ],
+  [
+    "Preschools",
+    "Education",
+    20
+  ],
+  [
+    "Special Education",
+    "Education",
+    5
+  ],
+  [
+    "Specialty Schools",
+    "Education",
+    50
+  ],
+  [
+    "Swimming Lessons/Schools",
+    "Education",
+    5
+  ],
+  [
+    "Tutoring Centers",
+    "Education",
+    2
+  ],
+  [
+    "Vocational & Technical School",
+    "Education",
+    1
+  ],
+  [
+    "Building Supplies",
+    "Home Services",
+    25
+  ],
+  [
+    "Carpet Installation",
+    "Home Services",
+    5
+  ],
+  [
+    "Carpeting",
+    "Home Services",
+    13
+  ],
+  [
+    "Contractors",
+    "Home Services",
+    73
+  ],
+  [
+    "Damage Restoration",
+    "Home Services",
+    2
+  ],
+  [
+    "Door Sales/Installation",
+    "Home Services",
+    3
+  ],
+  [
+    "Electricians",
+    "Home Services",
+    22
+  ],
+  [
+    "Flooring",
+    "Home Services",
+    26
+  ],
+  [
+    "Garage Door Services",
+    "Home Services",
+    7
+  ],
+  [
+    "Gardeners",
+    "Home Services",
+    9
+  ],
+  [
+    "Handyman",
+    "Home Services",
+    20
+  ],
+  [
+    "Heating & Air Conditioning/HVAC",
+    "Home Services",
+    62
+  ],
+  [
+    "Home Cleaning",
+    "Home Services",
     41
   ],
   [
-    "Outlet Stores",
-    "Shopping",
-    18
+    "Home Inspectors",
+    "Home Services",
+    8
   ],
   [
-    "Pawn Shops",
-    "Shopping",
-    10
-  ],
-  [
-    "Personal Shopping",
-    "Shopping",
+    "Home Theatre Installation",
+    "Home Services",
     6
   ],
   [
-    "Photography Stores & Services",
-    "Shopping",
-    10
+    "Home Window Tinting",
+    "Home Services",
+    4
   ],
   [
-    "Shopping Centers",
-    "Shopping",
+    "Interior Design",
+    "Home Services",
+    21
+  ],
+  [
+    "Internet Service Providers",
+    "Home Services",
     37
   ],
   [
-    "Sporting Goods",
-    "Shopping",
-    157
+    "Irrigation",
+    "Home Services",
+    3
   ],
   [
-    "Thrift Stores",
-    "Shopping",
-    82
+    "Keys & Locksmiths",
+    "Home Services",
+    19
   ],
   [
-    "Tobacco Shops",
-    "Shopping",
-    60
+    "Landscape Architects",
+    "Home Services",
+    3
   ],
   [
-    "Toy Stores",
-    "Shopping",
-    35
+    "Landscaping",
+    "Home Services",
+    37
   ],
   [
-    "Watches",
-    "Shopping",
+    "Lighting Fixtures & Equipment",
+    "Home Services",
+    16
+  ],
+  [
+    "Masonry/Concrete",
+    "Home Services",
+    4
+  ],
+  [
+    "Movers",
+    "Home Services",
+    32
+  ],
+  [
+    "Painters",
+    "Home Services",
+    15
+  ],
+  [
+    "Plumbing",
+    "Home Services",
+    45
+  ],
+  [
+    "Pool Cleaners",
+    "Home Services",
+    30
+  ],
+  [
+    "Real Estate",
+    "Home Services",
+    216
+  ],
+  [
+    "Real Estate Agents",
+    "Home Services",
+    33
+  ],
+  [
+    "Real Estate Services",
+    "Home Services",
+    27
+  ],
+  [
+    "Roofing",
+    "Home Services",
+    8
+  ],
+  [
+    "Security Systems",
+    "Home Services",
+    10
+  ],
+  [
+    "Shades & Blinds",
+    "Home Services",
+    11
+  ],
+  [
+    "Shared Office Spaces",
+    "Home Services",
+    1
+  ],
+  [
+    "Solar Installation",
+    "Home Services",
+    4
+  ],
+  [
+    "Television Service Providers",
+    "Home Services",
+    12
+  ],
+  [
+    "Tree Services",
+    "Home Services",
+    9
+  ],
+  [
+    "Utilities",
+    "Home Services",
+    1
+  ],
+  [
+    "Window Washing",
+    "Home Services",
+    6
+  ],
+  [
+    "Windows Installation",
+    "Home Services",
+    14
+  ],
+  [
+    "Bartenders",
+    "Event Planning & Services",
+    1
+  ],
+  [
+    "Cards & Stationery",
+    "Event Planning & Services",
+    22
+  ],
+  [
+    "Caterers",
+    "Event Planning & Services",
+    43
+  ],
+  [
+    "DJs",
+    "Event Planning & Services",
+    10
+  ],
+  [
+    "Magicians",
+    "Event Planning & Services",
+    2
+  ],
+  [
+    "Newspapers & Magazines",
+    "Event Planning & Services",
+    1
+  ],
+  [
+    "Officiants",
+    "Event Planning & Services",
+    2
+  ],
+  [
+    "Party & Event Planning",
+    "Event Planning & Services",
+    40
+  ],
+  [
+    "Party Equipment Rentals",
+    "Event Planning & Services",
+    5
+  ],
+  [
+    "Party Supplies",
+    "Event Planning & Services",
+    23
+  ],
+  [
+    "Photographers",
+    "Event Planning & Services",
+    39
+  ],
+  [
+    "Session Photography",
+    "Event Planning & Services",
+    9
+  ],
+  [
+    "Venues & Event Spaces",
+    "Event Planning & Services",
+    97
+  ],
+  [
+    "Videographers",
+    "Event Planning & Services",
+    4
+  ],
+  [
+    "Wedding Planning",
+    "Event Planning & Services",
+    21
+  ],
+  [
+    "Bagels",
+    "Food",
+    68
+  ],
+  [
+    "Bakeries",
+    "Food",
+    203
+  ],
+  [
+    "Beer, Wine & Spirits",
+    "Food",
+    102
+  ],
+  [
+    "Breweries",
+    "Food",
+    31
+  ],
+  [
+    "Bubble Tea",
+    "Food",
+    2
+  ],
+  [
+    "Butcher",
+    "Food",
+    2
+  ],
+  [
+    "CSA",
+    "Food",
+    2
+  ],
+  [
+    "Coffee & Tea",
+    "Food",
+    404
+  ],
+  [
+    "Convenience Stores",
+    "Food",
+    193
+  ],
+  [
+    "Desserts",
+    "Food",
+    115
+  ],
+  [
+    "Do-It-Yourself Food",
+    "Food",
+    11
+  ],
+  [
+    "Donuts",
+    "Food",
+    79
+  ],
+  [
+    "Farmers Market",
+    "Food",
+    51
+  ],
+  [
+    "Food Court",
+    "Food",
+    1
+  ],
+  [
+    "Food Delivery Services",
+    "Food",
+    24
+  ],
+  [
+    "Food Trucks",
+    "Food",
+    29
+  ],
+  [
+    "Gelato",
+    "Food",
+    12
+  ],
+  [
+    "Grocery",
+    "Food",
+    408
+  ],
+  [
+    "Ice Cream & Frozen Yogurt",
+    "Food",
+    294
+  ],
+  [
+    "Indonesian",
+    "Food",
+    1
+  ],
+  [
+    "Internet Cafes",
+    "Food",
+    3
+  ],
+  [
+    "Juice Bars & Smoothies",
+    "Food",
+    70
+  ],
+  [
+    "Personal Chefs",
+    "Food",
+    1
+  ],
+  [
+    "Pretzels",
+    "Food",
+    6
+  ],
+  [
+    "Shaved Ice",
+    "Food",
+    13
+  ],
+  [
+    "Specialty Food",
+    "Food",
+    216
+  ],
+  [
+    "Street Vendors",
+    "Food",
+    19
+  ],
+  [
+    "Tea Rooms",
+    "Food",
+    8
+  ],
+  [
+    "Wineries",
+    "Food",
+    8
+  ],
+  [
+    "Print Media",
+    "Mass Media",
+    9
+  ],
+  [
+    "Radio Stations",
+    "Mass Media",
+    13
+  ],
+  [
+    "Television Stations",
+    "Mass Media",
+    2
+  ],
+  [
+    "Airports",
+    "Hotels & Travel",
+    10
+  ],
+  [
+    "Bed & Breakfast",
+    "Hotels & Travel",
+    5
+  ],
+  [
+    "Campgrounds",
+    "Hotels & Travel",
+    3
+  ],
+  [
+    "Car Rental",
+    "Hotels & Travel",
+    38
+  ],
+  [
+    "Hotels",
+    "Hotels & Travel",
+    341
+  ],
+  [
+    "RV Parks",
+    "Hotels & Travel",
+    1
+  ],
+  [
+    "RV Rental",
+    "Hotels & Travel",
+    1
+  ],
+  [
+    "Resorts",
+    "Hotels & Travel",
+    9
+  ],
+  [
+    "Tours",
+    "Hotels & Travel",
+    34
+  ],
+  [
+    "Transportation",
+    "Hotels & Travel",
+    47
+  ],
+  [
+    "Travel Services",
+    "Hotels & Travel",
+    16
+  ],
+  [
+    "Vacation Rentals",
+    "Hotels & Travel",
+    1
+  ],
+  [
+    "Courthouses",
+    "Public Services & Government",
+    1
+  ],
+  [
+    "Departments of Motor Vehicles",
+    "Public Services & Government",
+    10
+  ],
+  [
+    "Landmarks & Historical Buildings",
+    "Public Services & Government",
+    14
+  ],
+  [
+    "Libraries",
+    "Public Services & Government",
+    30
+  ],
+  [
+    "Police Departments",
+    "Public Services & Government",
+    1
+  ],
+  [
+    "Post Offices",
+    "Public Services & Government",
+    37
+  ],
+  [
+    "Banks & Credit Unions",
+    "Financial Services",
+    94
+  ],
+  [
+    "Check Cashing/Pay-day Loans",
+    "Financial Services",
+    2
+  ],
+  [
+    "Financial Advising",
+    "Financial Services",
+    15
+  ],
+  [
+    "Insurance",
+    "Financial Services",
+    30
+  ],
+  [
+    "Investing",
+    "Financial Services",
+    4
+  ],
+  [
+    "Payroll Services",
+    "Financial Services",
+    1
+  ],
+  [
+    "Tax Services",
+    "Financial Services",
+    15
+  ],
+  [
+    "Acupuncture",
+    "Health & Medical",
+    19
+  ],
+  [
+    "Cannabis Clinics",
+    "Health & Medical",
+    3
+  ],
+  [
+    "Chiropractors",
+    "Health & Medical",
+    76
+  ],
+  [
+    "Counseling & Mental Health",
+    "Health & Medical",
+    9
+  ],
+  [
+    "Dentists",
+    "Health & Medical",
+    209
+  ],
+  [
+    "Diagnostic Services",
+    "Health & Medical",
+    13
+  ],
+  [
+    "Doctors",
+    "Health & Medical",
+    250
+  ],
+  [
+    "Ear Nose & Throat",
+    "Health & Medical",
+    8
+  ],
+  [
+    "Endodontists",
+    "Health & Medical",
+    4
+  ],
+  [
+    "Family Practice",
+    "Health & Medical",
+    39
+  ],
+  [
+    "Fertility",
+    "Health & Medical",
+    2
+  ],
+  [
+    "General Dentistry",
+    "Health & Medical",
+    130
+  ],
+  [
+    "Hearing Aid Providers",
+    "Health & Medical",
+    1
+  ],
+  [
+    "Home Health Care",
+    "Health & Medical",
+    3
+  ],
+  [
+    "Hospice",
+    "Health & Medical",
+    1
+  ],
+  [
+    "Hospitals",
+    "Health & Medical",
+    21
+  ],
+  [
+    "Hypnosis/Hypnotherapy",
+    "Health & Medical",
+    3
+  ],
+  [
+    "Internal Medicine",
+    "Health & Medical",
+    9
+  ],
+  [
+    "Laboratory Testing",
+    "Health & Medical",
+    8
+  ],
+  [
+    "Laser Eye Surgery/Lasik",
+    "Health & Medical",
+    6
+  ],
+  [
+    "Massage Therapy",
+    "Health & Medical",
+    29
+  ],
+  [
+    "Medical Centers",
+    "Health & Medical",
+    52
+  ],
+  [
+    "Medical Spas",
+    "Health & Medical",
     18
   ],
   [
-    "Wholesale Stores",
-    "Shopping",
+    "Midwives",
+    "Health & Medical",
+    2
+  ],
+  [
+    "Naturopathic/Holistic",
+    "Health & Medical",
+    6
+  ],
+  [
+    "Neurologist",
+    "Health & Medical",
+    5
+  ],
+  [
+    "Nutritionists",
+    "Health & Medical",
+    10
+  ],
+  [
+    "Obstetricians & Gynecologists",
+    "Health & Medical",
     28
   ],
   [
-    "Free Diving",
-    "Diving",
-    0
+    "Ophthalmologists",
+    "Health & Medical",
+    8
   ],
   [
-    "Scuba Diving",
-    "Diving",
+    "Optometrists",
+    "Health & Medical",
+    73
+  ],
+  [
+    "Oral Surgeons",
+    "Health & Medical",
+    12
+  ],
+  [
+    "Orthodontists",
+    "Health & Medical",
+    31
+  ],
+  [
+    "Orthopedists",
+    "Health & Medical",
+    11
+  ],
+  [
+    "Pediatric Dentists",
+    "Health & Medical",
+    29
+  ],
+  [
+    "Pediatricians",
+    "Health & Medical",
+    34
+  ],
+  [
+    "Periodontists",
+    "Health & Medical",
+    6
+  ],
+  [
+    "Pharmacy",
+    "Health & Medical",
     3
+  ],
+  [
+    "Physical Therapy",
+    "Health & Medical",
+    43
+  ],
+  [
+    "Podiatrists",
+    "Health & Medical",
+    7
+  ],
+  [
+    "Psychiatrists",
+    "Health & Medical",
+    2
+  ],
+  [
+    "Reflexology",
+    "Health & Medical",
+    10
+  ],
+  [
+    "Rehabilitation Center",
+    "Health & Medical",
+    2
+  ],
+  [
+    "Retirement Homes",
+    "Health & Medical",
+    2
+  ],
+  [
+    "Rolfing",
+    "Health & Medical",
+    1
+  ],
+  [
+    "Sports Medicine",
+    "Health & Medical",
+    12
+  ],
+  [
+    "Tattoo Removal",
+    "Health & Medical",
+    3
+  ],
+  [
+    "Traditional Chinese Medicine",
+    "Health & Medical",
+    3
+  ],
+  [
+    "Urgent Care",
+    "Health & Medical",
+    45
+  ],
+  [
+    "Urologists",
+    "Health & Medical",
+    1
+  ],
+  [
+    "Weight Loss Centers",
+    "Health & Medical",
+    18
+  ],
+  [
+    "Barre Classes",
+    "Fitness & Instruction",
+    8
+  ],
+  [
+    "Boot Camps",
+    "Fitness & Instruction",
+    8
+  ],
+  [
+    "Boxing",
+    "Fitness & Instruction",
+    4
   ],
   [
     "Dance Studios",
@@ -2140,54 +2565,184 @@
     25
   ],
   [
-    "Gyms",
-    "Fitness & Instruction",
-    139
-  ],
-  [
-    "Martial Arts",
-    "Fitness & Instruction",
-    22
-  ],
-  [
-    "Pilates",
-    "Fitness & Instruction",
-    11
-  ],
-  [
-    "Tai Chi",
-    "Fitness & Instruction",
-    1
-  ],
-  [
-    "Trainers",
-    "Fitness & Instruction",
-    92
-  ],
-  [
-    "Yoga",
-    "Fitness & Instruction",
-    60
-  ],
-  [
     "Dog Parks",
     "Parks",
     20
   ],
   [
-    "Skate Parks",
-    "Parks",
-    3
+    "Horse Racing",
+    "Stadiums & Arenas",
+    2
   ],
   [
-    "Laser Hair Removal",
-    "Hair Removal",
-    18
+    "Blow Dry/Out Services",
+    "Hair Salons",
+    7
   ],
   [
     "Hair Extensions",
     "Hair Salons",
     19
+  ],
+  [
+    "Spray Tanning",
+    "Tanning",
+    3
+  ],
+  [
+    "Art Supplies",
+    "Arts & Crafts",
+    26
+  ],
+  [
+    "Accessories",
+    "Fashion",
+    121
+  ],
+  [
+    "Children's Clothing",
+    "Fashion",
+    43
+  ],
+  [
+    "Department Stores",
+    "Fashion",
+    223
+  ],
+  [
+    "Florists",
+    "Flowers & Gifts",
+    78
+  ],
+  [
+    "Appliances",
+    "Home & Garden",
+    46
+  ],
+  [
+    "Furniture Stores",
+    "Home & Garden",
+    125
+  ],
+  [
+    "Hardware Stores",
+    "Home & Garden",
+    90
+  ],
+  [
+    "Flowers",
+    "Home Decor",
+    1
+  ],
+  [
+    "Gold Buyers",
+    "Jewelry",
+    2
+  ],
+  [
+    "Bikes",
+    "Sporting Goods",
+    49
+  ],
+  [
+    "Golf Equipment",
+    "Sporting Goods",
+    6
+  ],
+  [
+    "Outdoor Gear",
+    "Sporting Goods",
+    22
+  ],
+  [
+    "Champagne Bars",
+    "Lounges",
+    2
+  ],
+  [
+    "Dog Walkers",
+    "Pet Services",
+    15
+  ],
+  [
+    "Pet Boarding/Pet Sitting",
+    "Pet Services",
+    65
+  ],
+  [
+    "Pet Groomers",
+    "Pet Services",
+    94
+  ],
+  [
+    "Colombian",
+    "Latin American",
+    1
+  ],
+  [
+    "Lebanese",
+    "Middle Eastern",
+    3
+  ],
+  [
+    "Cafeteria",
+    "Scandinavian",
+    1
+  ],
+  [
+    "Basque",
+    "Spanish",
+    3
+  ],
+  [
+    "Live/Raw Food",
+    "Vegan",
+    2
+  ],
+  [
+    "Boat Dealers",
+    "Boat Repair",
+    1
+  ],
+  [
+    "Bankruptcy Law",
+    "Lawyers",
+    5
+  ],
+  [
+    "Business Law",
+    "Lawyers",
+    3
+  ],
+  [
+    "Divorce & Family Law",
+    "Lawyers",
+    5
+  ],
+  [
+    "Estate Planning Law",
+    "Lawyers",
+    7
+  ],
+  [
+    "General Litigation",
+    "Lawyers",
+    4
+  ],
+  [
+    "Immigration Law",
+    "Lawyers",
+    2
+  ],
+  [
+    "Public Relations",
+    "Web Design",
+    1
+  ],
+  [
+    "Private Tutors",
+    "Special Education",
+    1
   ],
   [
     "Art Schools",
@@ -2220,23 +2775,68 @@
     1
   ],
   [
-    "Language Schools",
-    "Specialty Schools",
-    0
-  ],
-  [
     "Massage Schools",
     "Specialty Schools",
     1
   ],
   [
-    "Swimming Lessons/Schools",
-    "Specialty Schools",
-    5
+    "Home Organization",
+    "Interior Design",
+    1
   ],
   [
-    "Vocational and Technical School",
-    "Specialty Schools",
+    "Apartments",
+    "Real Estate",
+    127
+  ],
+  [
+    "Commercial Real Estate",
+    "Real Estate",
+    1
+  ],
+  [
+    "Mortgage Brokers",
+    "Real Estate",
+    25
+  ],
+  [
+    "Property Management",
+    "Real Estate",
+    17
+  ],
+  [
+    "Home Staging",
+    "Real Estate Services",
+    1
+  ],
+  [
+    "Fences & Gates",
+    "Windows Installation",
+    1
+  ],
+  [
+    "Clowns",
+    "Magicians",
+    1
+  ],
+  [
+    "Laser Tag",
+    "Party & Event Planning",
+    1
+  ],
+  [
+    "Matchmakers",
+    "Party & Event Planning",
+    1
+  ],
+  [
+    "Event Photography",
+    "Photographers",
+    6
+  ],
+  [
+    "Cupcakes",
+    "Desserts",
     1
   ],
   [
@@ -2250,7 +2850,7 @@
     6
   ],
   [
-    "Chocolatiers and Shops",
+    "Chocolatiers & Shops",
     "Specialty Food",
     14
   ],
@@ -2270,7 +2870,7 @@
     48
   ],
   [
-    "Herbs and Spices",
+    "Herbs & Spices",
     "Specialty Food",
     3
   ],
@@ -2285,164 +2885,9 @@
     5
   ],
   [
-    "Cosmetic Dentists",
-    "Dentists",
-    69
-  ],
-  [
-    "Endodontists",
-    "Dentists",
-    4
-  ],
-  [
-    "General Dentistry",
-    "Dentists",
-    130
-  ],
-  [
-    "Oral Surgeons",
-    "Dentists",
-    12
-  ],
-  [
-    "Orthodontists",
-    "Dentists",
-    31
-  ],
-  [
-    "Pediatric Dentists",
-    "Dentists",
-    29
-  ],
-  [
-    "Periodontists",
-    "Dentists",
-    6
-  ],
-  [
-    "Allergists",
-    "Doctors",
-    7
-  ],
-  [
-    "Audiologist",
-    "Doctors",
-    0
-  ],
-  [
-    "Cardiologists",
-    "Doctors",
-    3
-  ],
-  [
-    "Cosmetic Surgeons",
-    "Doctors",
-    12
-  ],
-  [
-    "Dermatologists",
-    "Doctors",
-    26
-  ],
-  [
-    "Ear Nose & Throat",
-    "Doctors",
-    8
-  ],
-  [
-    "Family Practice",
-    "Doctors",
-    39
-  ],
-  [
-    "Fertility",
-    "Doctors",
+    "Boat Charters",
+    "Tours",
     2
-  ],
-  [
-    "Gastroenterologist",
-    "Doctors",
-    0
-  ],
-  [
-    "Gerontologists",
-    "Doctors",
-    0
-  ],
-  [
-    "Internal Medicine",
-    "Doctors",
-    9
-  ],
-  [
-    "Naturopathic/Holistic",
-    "Doctors",
-    6
-  ],
-  [
-    "Neurologist",
-    "Doctors",
-    5
-  ],
-  [
-    "Obstetricians and Gynecologists",
-    "Doctors",
-    28
-  ],
-  [
-    "Oncologist",
-    "Doctors",
-    0
-  ],
-  [
-    "Ophthalmologists",
-    "Doctors",
-    8
-  ],
-  [
-    "Orthopedists",
-    "Doctors",
-    11
-  ],
-  [
-    "Osteopathic Physicians",
-    "Doctors",
-    0
-  ],
-  [
-    "Pediatricians",
-    "Doctors",
-    34
-  ],
-  [
-    "Podiatrists",
-    "Doctors",
-    7
-  ],
-  [
-    "Proctologists",
-    "Doctors",
-    0
-  ],
-  [
-    "Psychiatrists",
-    "Doctors",
-    2
-  ],
-  [
-    "Pulmonologist",
-    "Doctors",
-    0
-  ],
-  [
-    "Sports Medicine",
-    "Doctors",
-    12
-  ],
-  [
-    "Tattoo Removal",
-    "Doctors",
-    3
   ],
   [
     "Airlines",
@@ -2470,293 +2915,53 @@
     13
   ],
   [
-    "Champagne Bars",
-    "Bars",
-    2
-  ],
-  [
-    "Dive Bars",
-    "Bars",
-    55
-  ],
-  [
-    "Gay Bars",
-    "Bars",
-    29
-  ],
-  [
-    "Hookah Bars",
-    "Bars",
-    9
-  ],
-  [
-    "Lounges",
-    "Bars",
-    103
-  ],
-  [
-    "Pubs",
-    "Bars",
-    57
-  ],
-  [
-    "Sports Bars",
-    "Bars",
-    173
-  ],
-  [
-    "Wine Bars",
-    "Bars",
-    64
-  ],
-  [
-    "Dog Walkers",
-    "Pet Services",
-    15
-  ],
-  [
-    "Pet Boarding/Pet Sitting",
-    "Pet Services",
-    65
-  ],
-  [
-    "Pet Groomers",
-    "Pet Services",
-    94
-  ],
-  [
-    "Pet Training",
-    "Pet Services",
-    44
-  ],
-  [
-    "Bankruptcy Law",
-    "Lawyers",
-    5
-  ],
-  [
-    "Criminal Defense Law",
-    "Lawyers",
-    0
-  ],
-  [
-    "Divorce and Family Law",
-    "Lawyers",
-    5
-  ],
-  [
-    "Employment Law",
-    "Lawyers",
-    0
-  ],
-  [
-    "Estate Planning Law",
-    "Lawyers",
-    7
-  ],
-  [
-    "General Litigation",
-    "Lawyers",
-    4
-  ],
-  [
-    "Immigration Law",
-    "Lawyers",
-    2
-  ],
-  [
-    "Personal Injury Law",
-    "Lawyers",
-    5
-  ],
-  [
-    "Real Estate Law",
-    "Lawyers",
-    2
-  ],
-  [
-    "Dim Sum",
-    "Chinese",
-    7
-  ],
-  [
-    "Szechuan",
-    "Chinese",
-    4
-  ],
-  [
-    "Art Supplies",
-    "Arts & Crafts",
-    26
-  ],
-  [
-    "Costumes",
-    "Arts & Crafts",
-    13
-  ],
-  [
-    "Fabric Stores",
-    "Arts & Crafts",
-    23
-  ],
-  [
-    "Framing",
-    "Arts & Crafts",
-    5
-  ],
-  [
-    "Bookstores",
-    "Books, Mags, Music and Video",
-    52
-  ],
-  [
-    "Comic Books",
-    "Books, Mags, Music and Video",
-    12
-  ],
-  [
-    "Music & DVDs",
-    "Books, Mags, Music and Video",
-    30
-  ],
-  [
-    "Newspapers & Magazines",
-    "Books, Mags, Music and Video",
+    "Party Bus Rentals",
+    "Travel Services",
     1
   ],
   [
-    "Videos and Video Game Rental",
-    "Books, Mags, Music and Video",
-    32
+    "Cosmetic Dentists",
+    "Dentists",
+    69
   ],
   [
-    "Vinyl Records",
-    "Books, Mags, Music and Video",
-    6
+    "Diagnostic Imaging",
+    "Diagnostic Services",
+    5
   ],
   [
-    "Accessories",
-    "Fashion",
-    121
+    "Allergists",
+    "Doctors",
+    7
   ],
   [
-    "Children's Clothing",
-    "Fashion",
-    43
-  ],
-  [
-    "Department Stores",
-    "Fashion",
-    223
-  ],
-  [
-    "Leather Goods",
-    "Fashion",
-    10
-  ],
-  [
-    "Lingerie",
-    "Fashion",
-    28
-  ],
-  [
-    "Maternity Wear",
-    "Fashion",
+    "Cardiologists",
+    "Doctors",
     3
   ],
   [
-    "Men's Clothing",
-    "Fashion",
-    118
+    "Cosmetic Surgeons",
+    "Doctors",
+    12
   ],
   [
-    "Plus Size Fashion",
-    "Fashion",
+    "Dermatologists",
+    "Doctors",
+    26
+  ],
+  [
+    "Anesthesiologists",
+    "Neurologist",
     1
   ],
   [
-    "Shoe Stores",
-    "Fashion",
-    77
-  ],
-  [
-    "Swimwear",
-    "Fashion",
-    5
-  ],
-  [
-    "Used, Vintage & Consignment",
-    "Fashion",
-    72
-  ],
-  [
-    "Women's Clothing",
-    "Fashion",
-    227
-  ],
-  [
-    "Cards & Stationery",
-    "Flowers & Gifts",
-    22
-  ],
-  [
-    "Florists",
-    "Flowers & Gifts",
-    78
-  ],
-  [
-    "Appliances",
-    "Home & Garden",
-    46
-  ],
-  [
+    "Auction Houses",
     "Furniture Stores",
-    "Home & Garden",
-    125
+    1
   ],
   [
-    "Hardware Stores",
-    "Home & Garden",
-    90
-  ],
-  [
-    "Home Decor",
-    "Home & Garden",
-    80
-  ],
-  [
-    "Hot Tub and Pool",
-    "Home & Garden",
-    22
-  ],
-  [
-    "Kitchen & Bath",
-    "Home & Garden",
-    31
-  ],
-  [
-    "Mattresses",
-    "Home & Garden",
-    16
-  ],
-  [
-    "Nurseries & Gardening",
-    "Home & Garden",
-    60
-  ],
-  [
-    "Bikes",
-    "Sporting Goods",
-    49
-  ],
-  [
-    "Outdoor Gear",
-    "Sporting Goods",
-    22
-  ],
-  [
-    "Sports Wear",
-    "Sporting Goods",
-    42
+    "Cantonese",
+    "Ethnic Food",
+    1
   ]
 ]
