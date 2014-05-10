@@ -6,7 +6,7 @@
         <meta name="author" content="Adam Durity">
         <title>{% block title %}{% endblock %} – The Data Pipeline</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
-        <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/main.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/base.css') }}">
         {% endblock %}
     </head>
     <body>
@@ -22,7 +22,7 @@
             <footer class="small text-center">
                 <div class="row">
                     <p>
-                        Created by <a href="http://adamdurity.com">Adam Durity</a> and Aditya Marella
+                        Created by Adam Durity and Aditya Marella
                         for <a href="http://data.cmubi.org/">The Data Pipeline</a> class
                         at <a href="http://www.cmu.edu">Carnegie Mellon University</a>.
                     </p>
@@ -37,5 +37,7 @@
         <script type="text/javascript" src="{{ url_for('static', filename='bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
         <!-- <script type="text/javascript" src="{{ url_for('static', filename='bower_components/d3/d3.min.js') }}"></script> -->
         <!-- <script type="text/coffeescript" src="{{ url_for('static', filename='main.coffee') }}"></script> -->
+        {% block scripts %}
+        {% endblock %}
     </body>
 </html>
