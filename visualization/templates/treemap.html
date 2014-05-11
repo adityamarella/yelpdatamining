@@ -11,26 +11,8 @@
 {% endblock %}
 {% block scripts %}
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='javascript/treemap.js') }}"></script>
 <script type="text/javascript">
-  var data;
-
-  google.load("visualization", "1", {packages:["treemap"]});
-
-  google.setOnLoadCallback(function() {
-    // Create and populate the data table.
-    data = google.visualization.arrayToDataTable({{ data | safe }});
-
-    // Create and draw the visualization.
-    var tree = new google.visualization.TreeMap(document.getElementById('treemap-chart'));
-    tree.draw(data, {
-      fontSize: 16,
-      maxColor: '#00dd00',
-      midColor: '#00bb00',
-      minColor: '#009900'
-    });
-
-    google.visualization.events.addListener(tree, 'select', function() {
-    });
-  });
+  var data = {{ data | safe }}
 </script>
 {% endblock %}
