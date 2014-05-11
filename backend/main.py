@@ -5,9 +5,11 @@ import urllib
 import logging
 import datetime
 import webapp2
+import gviz_api
 from webapp2_extras import jinja2
 from webapp2_extras import json
 from django.utils import simplejson
+
 from gcloud_query_helper import GCloudQueryHelper
 
 # BaseHandler subclasses RequestHandler so that we can use jinja
@@ -55,7 +57,10 @@ class MainHandler(BaseHandler):
                     where category_id=%%s\
                     order by freq desc limit 100"%(','.join(projection), mode)
             rows = self.query_helper.run_query(stmt, (category))
-            resp = json.encode(rows, 'utf-8')
+
+            data_table = gviz_api.DataTable(projection)
+            data_table.LoadData(rows)
+            resp = data_table.ToJSonResponse(columns_order=tuple(projection)) 
 
             headers = self.write_response(resp, resp_type, 200)
         except NameError,e:
