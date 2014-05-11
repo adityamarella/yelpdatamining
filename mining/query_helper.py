@@ -3,6 +3,56 @@ import json
 import sqlite3
 import sys
 
+class QueryHelper(object):
+
+    def __init__(self, yelp_db_path="yelp.db"):
+        self.conn = sqlite3.connect(yelp_db_path)
+        self.cursor = self.conn.cursor()
+
+    def close(self):
+        self.conn.close()
+
+    def run_query(self, query, bindings=[]):
+        self.cursor.execute(query, bindings)
+        rows = self.cursor.fetchall()
+        return rows
+
+    def commit(self):
+        self.conn.commit()
+    
+    def _insert(self, table, keys, values):
+        try:
+            stmt = "select max(id) from %s"%(table)
+            self.cursor.execute(stmt)
+            row = self.cursor.fetchone()
+            max_id = -1
+            if row[0]!=None:
+                max_id = row[0]
+            
+            values.insert(0, 1+max_id)
+
+            stmt = "insert into %s (%s) values (%s)"%(table, 'id,'+','.join(keys), ','.join(['?']*(1+len(keys))))
+            self.cursor.execute(stmt, values)
+            return 1+max_id
+        except Exception,e:
+            raise e
+
+class ReviewSupplier(object):
+
+    def __init__(self, query_helper):
+        self.query_helper = query_helper
+
+    def get_reviews(self, category_id = -1):
+
+        stmt = "SELECT B.id, R.review FROM\
+                    businesses as B, reviews as R, categories_businesses as CB\
+                WHERE B.id=CB.business_id and R.business_id = B.id and CB.category_id=?"
+        values = [category_id]
+        rows = self.query_helper.run_query(stmt, values)
+        
+        return [row[1] for row in rows]
+
+
 class Category(object):
     """
     The following three attributes define this datastructure
@@ -138,22 +188,55 @@ class CategoryTreeCreator(object):
             except IndexError:
                 node = None
 
-class QueryHelper(object):
+class TermCloud(object):
+    
+    def __init__(self, query_helper):
+        self.TABLE_NAME = self.__class__.__name__.lower()
+        self.query_helper = query_helper
+        self.review_supplier = ReviewSupplier(self.query_helper)
+        self.create_table()
 
-    def __init__(self, yelp_db_path="yelp.db"):
-        self.conn = sqlite3.connect(yelp_db_path)
-        self.cursor = self.conn.cursor()
+    def create_table(self):
+        stmts = ["""
+            CREATE TABLE IF NOT EXISTS %s (
+                id INTEGER,
+                term TEXT,
+                freq REAL,
+                category_id INTEGER,
 
-    def close(self):
-        self.conn.close()
+                PRIMARY KEY (id),
+                FOREIGN KEY (category_id) REFERENCES categories(id)
 
-    def run_query(self, query, bindings=[]):
-        self.cursor.execute(query, bindings)
-        rows = self.cursor.fetchall()
-        return rows
+            );
+            """%(self.TABLE_NAME),
+            """
+            CREATE TABLE IF NOT EXISTS %s_context (
+                term_id INTEGER,
+                business_id INTEGER,
+                context TEXT,
 
-    def commit(self):
-        self.conn.commit()
+                FOREIGN KEY (term_id) REFERENCES %s(id),
+                FOREIGN KEY (business_id) REFERENCES businesses(id)
+            );
+            """%(self.TABLE_NAME, self.TABLE_NAME)]
+         
+        for stmt in stmts:
+            self.query_helper.run_query(stmt)
+         
+        self.query_helper.commit()
+
+    def get_all_categories(self):
+        stmt = "select id from categories"
+        rows = self.query_helper.run_query(stmt)
+        return [row[0] for row in rows]
+
+    def insert_term_frequencies(self, category_id, freq_dict):
+        for term,freq in freq_dict.iteritems():
+            self.query_helper._insert(self.TABLE_NAME, 
+                    ['term', 'freq', 'category_id'], 
+                    [term, freq, category_id])
+        self.query_helper.commit()
+
 
 def enumerate_category_tree(root):
     categories = [("Category", "Parent", "Business Count")]
