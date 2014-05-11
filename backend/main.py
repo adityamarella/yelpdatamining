@@ -8,31 +8,21 @@ import webapp2
 from webapp2_extras import jinja2
 from webapp2_extras import json
 from django.utils import simplejson
-
-DATE_FORMAT = "%Y-%m-%d"
-
-BUSINESS_INFO_ATTRS = ['name', 'full_address', 'type', 'stars']
+from gcloud_query_helper import GCloudQueryHelper
 
 # BaseHandler subclasses RequestHandler so that we can use jinja
 class BaseHandler(webapp2.RequestHandler):
 
     @webapp2.cached_property
     def jinja2(self):
-        # Returns a Jinja2 renderer cached in the app registry.
         return jinja2.get_jinja2(app=self.app)
 
-        # This will call self.response.write using the specified template and context.
-        # The first argument should be a string naming the template file to be used. 
-        # The second argument should be a pointer to an array of context variables
-        #  that can be used for substitutions within the template
     def render_response(self, _template, context):
-        # Renders a template and writes the result to the response.
         values = {'url_for': self.uri_for}
         logging.info(context)
         values.update(context)
         self.response.headers['Content-Type'] = 'text/html'
 
-        # Renders a template and writes the result to the response.
         try: 
             rv = self.jinja2.render_template(_template, **values)
             self.response.headers['Content-Type'] = 'text/html; charset=utf-8'
@@ -42,86 +32,56 @@ class BaseHandler(webapp2.RequestHandler):
 
 # Class MainHandler now subclasses BaseHandler instead of webapp2
 class MainHandler(BaseHandler):
+
+    def __init__(self, *args, **kwargs):
+        BaseHandler.__init__(self, *args, **kwargs)
+        self.query_helper = GCloudQueryHelper()
         
     # This method should return the html to be displayed
     def get(self):
        
-        mode = self.request.get("mode", "gettoken")
-        resp_type = self.request.get("type", "html")
-       
-        try:
-            if mode == "gettoken":
-                token = self.request.get("tk", "")
-                token_source = self.request.get("tsrc", "adjnoun")
-                logging.info("params: mode: %s, tk: %s, tsrc: %s"%(mode, token, token_source))
-                data = self.get_business_ids(token, token_source)
-                data = self.get_business_info(data)
+        try: 
+            mode = self.request.get("mode", None)
+            resp_type = self.request.get("format", None)
 
-            elif mode == "getbusinessinfo":
-                bids = self.request.get("bids", None)
-                logging.info("params: mode: %s, bids: %s"%(mode, bids))
-                data = self.get_business_info(bids.split(","))
+            if mode==None or resp_type==None:
+                raise NameError("input format error")
+             
+            category = int(self.request.get("category", -1))
 
-            status = "200 OK"
+            projection = ['id', 'term', 'freq']
 
-        except Exception, e:
-            data = "Server Error: %s"%str(e)
-            status = "501 Not Implemented"
-            raise e
+            stmt = "select %s from %s\
+                    where category_id=%%s\
+                    order by freq desc limit 100"%(','.join(projection), mode)
+            rows = self.query_helper.run_query(stmt, (category))
+            resp = json.encode(rows, 'utf-8')
 
-        finally:
-            if resp_type == "json":
-                self.response.headers["Content-Type"] = "application/json"
-                self.response.headers["Status"] = status
-                self.response.out.write("%s"%(json.encode(data, 'utf-8')))
-            else:
-                context = {"data": data}
-                self.render_response('index.html', context)
+            headers = self.write_response(resp, resp_type, 200)
+        except NameError,e:
+            logging.error(e)
+            headers = self.write_response("Error: %s"%str(e), resp_type, 400)
+        except Exception,e:
+            logging.error(e)
+            headers = self.write_response("Error: %s"%str(e), resp_type, 500)
 
-    def get_business_info(self, business_ids):
-        """ collect data from the server. """
+    def write_response(self, resp, resp_type, status):
+        headers = {}
+        if resp_type == "json":
+            headers["Content-Type"] = "application/json"
+        else:
+            headers["Content-Type"] = "text/html"
 
-        try:
-            data = getattr(self, "business_info")
-        except AttributeError:
-            data = None
-
-        if not data:
-            fpath = "data/business.json"
-            try:
-                fp = open(fpath)
-                data = {}
-                for line in fp:
-                    d=simplejson.loads(line.strip())
-                    data[d["business_id"]] = d
-                fp.close()
-                setattr(self, "business_info", data)
-            except IOError:
-                logging.info("failed to load file")
-
-        ret = {}
-        for bid in business_ids:
-            v = data.get(bid, {})
-            ret[bid] = { a:b for a,b in v.iteritems() if a in BUSINESS_INFO_ATTRS}
-
-        return ret
-
-    def get_business_ids(self, token, token_source):
-        try:
-            data = getattr(self, "self.%s"%token_source)
-        except AttributeError:
-            data = None
-
-        if not data:
-            fpath = "data/adjnoun.json"
-            try:
-                fp = open(fpath)
-                data = eval(fp.read())
-                setattr(self, "self.%s"%token_source, data)
-                fp.close()
-            except IOError:
-                logging.info("failed to load file")
+        if status == 200:
+            headers["Status"] = "200 OK"
+        elif status == 400:
+            headers["Status"] = "400 Bad Request"
+        else:
+            headers["Status"] = "500 Internal Server Error"
         
-        return data[token]
+        for k,v in headers.iteritems():
+            self.response.headers[k] = v
+        self.response.out.write("%s"%resp)
+
 
 app = webapp2.WSGIApplication([('/.*', MainHandler)], debug=True)

@@ -18,14 +18,12 @@ handlers:
 - url: /getinfo
   script: main.app
 
-- url: /data
-  static_dir: data
-  application_readable: true
-
 libraries:
 - name: webapp2
   version: "latest"
 - name: jinja2
+  version: "latest"
+- name: MySQLdb
   version: "latest"
 - name: django
   version: "latest"
