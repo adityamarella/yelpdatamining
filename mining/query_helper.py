@@ -239,12 +239,13 @@ class TermCloud(object):
 
 
 def enumerate_category_tree(root):
-    categories = [("Category", "Parent", "Business Count")]
+    categories = [("category_id", "category_title", "parent_category", "business_count")]
     categoryQueue = deque([(root, None)])
 
     while len(categoryQueue) != 0:
         node, parent_title = categoryQueue.popleft()
-        categories.append((node.title, parent_title, node.business_count))
+        categories.append((node.category_id, node.title,
+            parent_title, node.business_count))
         [categoryQueue.append((child, node.title)) for child in node.children]
 
     return categories
