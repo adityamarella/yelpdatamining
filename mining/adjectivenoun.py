@@ -3,32 +3,34 @@
 import sys
 import nltk
 from stanford_utils import Tokenizer
+from query_helper import QueryHelper, ReviewSupplier, TermCloud
 
 tokenizer = Tokenizer()
 
-#given the word pair return back the list of restaurants
-#create a mapping from word pair to restaurants
-#and from restaurants to reviews
+class AdjectiveNoun(TermCloud):
 
-#more specifically
+    def __init__(self, query_helper):
+        TermCloud.__init__(self, query_helper)
 
-#first CGI
-#input: tk='<token - for ex: word pair>'
-#output: lst of restaurants
+    def process(self):
+        categories = self.get_all_categories()
+        for category in categories:
+            reviews = self.review_supplier.get_reviews(category)
+            freq = self.get_word_pair_frequencies(reviews[:500])
+            self.insert_term_frequencies(category, freq)
 
-#second CGI
-#input: rs='<lst of res>'
-#output: metadata for each restaurant
+    def get_word_pair_frequencies(self, reviews):
+        d = {}
+        for review in reviews:
+            tokens = tokenizer.tokenize(review.lower())
+            tagged_tokens = nltk.pos_tag(tokens)
+            for i,word in enumerate(tokens[:-1]):
+                if tagged_tokens[i][1]=='JJ' and\
+                        tagged_tokens[i+1][1].startswith("NN"):
+                    k = "%s %s"%(tokens[i], tokens[i+1]) 
+                    d[k] = d.setdefault(k, 0) + 1
+        return d
 
-def get_word_pairs(review):
-    d = {}
-    tokens = tokenizer.tokenize(review.lower())
-    tagged_tokens = nltk.pos_tag(tokens)
-    for i,word in enumerate(tokens[:-1]):
-        if tagged_tokens[i][1]=='JJ' and tagged_tokens[i+1][1].startswith("NN"):
-            k = (tokens[i], tokens[i+1]) 
-            d[k] = d.setdefault(k, 0) + 1
-    return d
 
 def process():
     freq = {}
