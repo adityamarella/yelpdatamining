@@ -57,9 +57,13 @@ getSelectedCategoryRow = ->
 
 updateVisualizations = (categoryRow) ->
   categoryId = categoryDataTable.getValue categoryRow, categoryDataColumns.category_id
+  updateCategoryTitle categoryRow
   updateAdjNoun categoryId
   updateTopics categoryId
 
+updateCategoryTitle = (categoryRow)->
+  categoryTitle = categoryDataTable.getValue categoryRow, categoryDataColumns.category_title
+  $('h2>span#category-title').text(categoryTitle)
 
 updateAdjNoun = (categoryId) ->
   url = "http://amarella-project-data.appspot.com/getinfo?mode=adjectivenoun&format=json&category=#{categoryId}"
