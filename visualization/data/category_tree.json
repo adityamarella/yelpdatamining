@@ -3,3558 +3,4151 @@
     "category_id",
     "category_title",
     "parent_category",
-    "business_count"
+    "business_count",
+    "avg_review_count"
   ],
   [
     -1,
     "All",
     null,
+    0,
     0
   ],
   [
     0,
     "Active Life",
     "All",
-    695
+    695,
+    13.0
   ],
   [
     1,
     "Arts & Entertainment",
     "All",
-    385
+    385,
+    33.0
   ],
   [
     139,
     "Religious Organizations",
     "All",
-    42
+    42,
+    5.0
   ],
   [
     5,
     "Automotive",
     "All",
-    859
+    859,
+    7.0
   ],
   [
     38,
     "Beauty & Spas",
     "All",
-    1109
+    1109,
+    9.0
   ],
   [
     7,
     "Shopping",
     "All",
-    2499
+    2499,
+    9.0
   ],
   [
     42,
     "Nightlife",
     "All",
-    752
+    752,
+    61.0
   ],
   [
     43,
     "Local Services",
     "All",
-    540
+    540,
+    6.0
   ],
   [
     110,
     "Local Flavor",
     "All",
-    54
+    54,
+    15.0
   ],
   [
     14,
     "Pets",
     "All",
-    308
+    308,
+    7.0
   ],
   [
     17,
     "Restaurants",
     "All",
-    5556
+    5556,
+    44.0
   ],
   [
     114,
     "Professional Services",
     "All",
-    161
+    161,
+    5.0
   ],
   [
     209,
     "Education",
     "All",
-    117
+    117,
+    6.0
   ],
   [
     20,
     "Home Services",
     "All",
-    761
+    761,
+    5.0
   ],
   [
     53,
     "Event Planning & Services",
     "All",
-    588
+    588,
+    18.0
   ],
   [
     23,
     "Food",
     "All",
-    2091
+    2091,
+    24.0
   ],
   [
     248,
     "Mass Media",
     "All",
-    25
+    25,
+    5.0
   ],
   [
     52,
     "Hotels & Travel",
     "All",
-    495
+    495,
+    23.0
   ],
   [
     167,
     "Public Services & Government",
     "All",
-    112
+    112,
+    10.0
   ],
   [
     74,
     "Financial Services",
     "All",
-    153
+    153,
+    4.0
   ],
   [
     30,
     "Health & Medical",
     "All",
-    815
+    815,
+    5.0
   ],
   [
     263,
     "Amateur Sports Teams",
     "Active Life",
-    12
+    12,
+    11.0
   ],
   [
     360,
     "Amusement Parks",
     "Active Life",
-    21
+    21,
+    27.0
   ],
   [
     547,
     "Aquariums",
     "Active Life",
-    1
+    1,
+    3.0
   ],
   [
     577,
     "Archery",
     "Active Life",
-    2
+    2,
+    5.0
   ],
   [
     338,
     "Bike Rentals",
     "Active Life",
-    19
+    19,
+    10.0
   ],
   [
     429,
     "Boating",
     "Active Life",
-    11
+    11,
+    8.0
   ],
   [
     326,
     "Bowling",
     "Active Life",
-    22
+    22,
+    21.0
   ],
   [
     279,
     "Climbing",
     "Active Life",
-    2
+    2,
+    145.0
   ],
   [
     529,
     "Disc Golf",
     "Active Life",
-    4
+    4,
+    11.0
   ],
   [
     374,
     "Diving",
     "Active Life",
-    7
+    7,
+    4.0
   ],
   [
     32,
     "Fitness & Instruction",
     "Active Life",
-    281
+    281,
+    11.0
   ],
   [
     104,
     "Golf",
     "Active Life",
-    103
+    103,
+    10.0
   ],
   [
     518,
     "Gun/Rifle Ranges",
     "Active Life",
-    8
+    8,
+    5.0
   ],
   [
     415,
     "Gymnastics",
     "Active Life",
-    2
+    2,
+    6.0
   ],
   [
     168,
     "Gyms",
     "Active Life",
-    139
+    139,
+    13.0
   ],
   [
     280,
     "Hiking",
     "Active Life",
-    29
+    29,
+    26.0
   ],
   [
     511,
     "Horseback Riding",
     "Active Life",
-    13
+    13,
+    10.0
   ],
   [
     382,
     "Hot Air Balloons",
     "Active Life",
-    4
+    4,
+    7.0
   ],
   [
     364,
     "Lakes",
     "Active Life",
-    9
+    9,
+    13.0
   ],
   [
     461,
     "Leisure Centers",
     "Active Life",
-    2
+    2,
+    7.0
   ],
   [
     267,
     "Martial Arts",
     "Active Life",
-    22
+    22,
+    4.0
   ],
   [
     106,
     "Mini Golf",
     "Active Life",
-    6
+    6,
+    37.0
   ],
   [
     299,
     "Mountain Biking",
     "Active Life",
-    5
+    5,
+    11.0
   ],
   [
     440,
     "Paintball",
     "Active Life",
-    3
+    3,
+    3.0
   ],
   [
     82,
     "Parks",
     "Active Life",
-    101
+    101,
+    21.0
   ],
   [
     423,
     "Pilates",
     "Active Life",
-    11
+    11,
+    11.0
   ],
   [
     231,
     "Playgrounds",
     "Active Life",
-    17
+    17,
+    14.0
   ],
   [
     491,
     "Rafting/Kayaking",
     "Active Life",
-    4
+    4,
+    29.0
   ],
   [
     436,
     "Recreation Centers",
     "Active Life",
-    6
+    6,
+    13.0
   ],
   [
     521,
     "Scuba Diving",
     "Active Life",
-    3
+    3,
+    5.0
   ],
   [
     380,
     "Skate Parks",
     "Active Life",
-    3
+    3,
+    7.0
   ],
   [
     523,
     "Skating Rinks",
     "Active Life",
-    4
+    4,
+    11.0
   ],
   [
     486,
     "Skydiving",
     "Active Life",
-    1
+    1,
+    4.0
   ],
   [
     504,
     "Soccer",
     "Active Life",
-    3
+    3,
+    4.0
   ],
   [
     286,
     "Sports Clubs",
     "Active Life",
-    10
+    10,
+    16.0
   ],
   [
     478,
     "Summer Camps",
     "Active Life",
-    2
+    2,
+    6.0
   ],
   [
     81,
     "Swimming Pools",
     "Active Life",
-    20
+    20,
+    8.0
   ],
   [
     343,
     "Tai Chi",
     "Active Life",
-    1
+    1,
+    3.0
   ],
   [
     229,
     "Tennis",
     "Active Life",
-    7
+    7,
+    7.0
   ],
   [
     31,
     "Trainers",
     "Active Life",
-    92
+    92,
+    12.0
   ],
   [
     241,
     "Yoga",
     "Active Life",
-    60
+    60,
+    14.0
   ],
   [
     342,
     "Zoos",
     "Active Life",
-    2
+    2,
+    137.0
   ],
   [
     105,
     "Arcades",
     "Arts & Entertainment",
-    11
+    11,
+    41.0
   ],
   [
     298,
     "Botanical Gardens",
     "Arts & Entertainment",
-    2
+    2,
+    163.0
   ],
   [
     345,
     "Casinos",
     "Arts & Entertainment",
-    8
+    8,
+    61.0
   ],
   [
     196,
     "Cinema",
     "Arts & Entertainment",
-    56
+    56,
+    50.0
   ],
   [
     291,
     "Cultural Center",
     "Arts & Entertainment",
-    2
+    2,
+    52.0
   ],
   [
     116,
     "Festivals",
     "Arts & Entertainment",
-    33
+    33,
+    14.0
   ],
   [
     103,
     "Go Karts",
     "Arts & Entertainment",
-    1
+    1,
+    64.0
   ],
   [
     187,
     "Museums",
     "Arts & Entertainment",
-    36
+    36,
+    36.0
   ],
   [
     559,
     "Opera & Ballet",
     "Arts & Entertainment",
-    2
+    2,
+    16.0
   ],
   [
     225,
     "Performing Arts",
     "Arts & Entertainment",
-    66
+    66,
+    21.0
   ],
   [
     321,
     "Professional Sports Teams",
     "Arts & Entertainment",
-    8
+    8,
+    14.0
   ],
   [
     485,
     "Psychics & Astrologers",
     "Arts & Entertainment",
-    2
+    2,
+    7.0
   ],
   [
     568,
     "Race Tracks",
     "Arts & Entertainment",
-    1
+    1,
+    13.0
   ],
   [
     480,
     "Social Clubs",
     "Arts & Entertainment",
-    3
+    3,
+    5.0
   ],
   [
     2,
     "Stadiums & Arenas",
     "Arts & Entertainment",
-    27
+    27,
+    46.0
   ],
   [
     586,
     "Ticket Sales",
     "Arts & Entertainment",
-    2
+    2,
+    6.0
   ],
   [
     138,
     "Churches",
     "Religious Organizations",
-    37
+    37,
+    5.0
   ],
   [
     573,
     "Hindu Temples",
     "Religious Organizations",
-    1
+    1,
+    3.0
   ],
   [
     203,
     "Auto Detailing",
     "Automotive",
-    32
+    32,
+    10.0
   ],
   [
     170,
     "Auto Glass Services",
     "Automotive",
-    58
+    58,
+    5.0
   ],
   [
     230,
     "Auto Parts & Supplies",
     "Automotive",
-    67
+    67,
+    5.0
   ],
   [
     125,
     "Auto Repair",
     "Automotive",
-    319
+    319,
+    6.0
   ],
   [
     300,
     "Body Shops",
     "Automotive",
-    44
+    44,
+    5.0
   ],
   [
     268,
     "Car Dealers",
     "Automotive",
-    41
+    41,
+    5.0
   ],
   [
     297,
     "Car Stereo Installation",
     "Automotive",
-    9
+    9,
+    5.0
   ],
   [
     67,
     "Car Wash",
     "Automotive",
-    88
+    88,
+    14.0
   ],
   [
     39,
     "Gas & Service Stations",
     "Automotive",
-    137
+    137,
+    5.0
   ],
   [
     311,
     "Motorcycle Dealers",
     "Automotive",
-    11
+    11,
+    5.0
   ],
   [
     310,
     "Motorcycle Repair",
     "Automotive",
-    11
+    11,
+    5.0
   ],
   [
     40,
     "Oil Change Stations",
     "Automotive",
-    107
+    107,
+    6.0
   ],
   [
     435,
     "Parking",
     "Automotive",
-    8
+    8,
+    10.0
   ],
   [
     378,
     "RV Dealers",
     "Automotive",
-    4
+    4,
+    5.0
   ],
   [
     240,
     "Registration Services",
     "Automotive",
-    1
+    1,
+    10.0
   ],
   [
     432,
     "Smog Check Stations",
     "Automotive",
-    6
+    6,
+    7.0
   ],
   [
     4,
     "Tires",
     "Automotive",
-    147
+    147,
+    9.0
   ],
   [
     148,
     "Towing",
     "Automotive",
-    13
+    13,
+    4.0
   ],
   [
     496,
     "Truck Rental",
     "Automotive",
-    8
+    8,
+    4.0
   ],
   [
     562,
     "Wheel & Rim Repair",
     "Automotive",
-    1
+    1,
+    12.0
   ],
   [
     406,
     "Windshield Installation & Repair",
     "Automotive",
-    17
+    17,
+    5.0
   ],
   [
     50,
     "Barbers",
     "Beauty & Spas",
-    105
+    105,
+    7.0
   ],
   [
     35,
     "Day Spas",
     "Beauty & Spas",
-    107
+    107,
+    23.0
   ],
   [
     474,
     "Eyelash Service",
     "Beauty & Spas",
-    24
+    24,
+    6.0
   ],
   [
     36,
     "Hair Removal",
     "Beauty & Spas",
-    81
+    81,
+    10.0
   ],
   [
     49,
     "Hair Salons",
     "Beauty & Spas",
-    285
+    285,
+    6.0
   ],
   [
     189,
     "Hair Stylists",
     "Beauty & Spas",
-    61
+    61,
+    6.0
   ],
   [
     275,
     "Laser Hair Removal",
     "Beauty & Spas",
-    18
+    18,
+    6.0
   ],
   [
     316,
     "Makeup Artists",
     "Beauty & Spas",
-    30
+    30,
+    8.0
   ],
   [
     37,
     "Massage",
     "Beauty & Spas",
-    89
+    89,
+    15.0
   ],
   [
     51,
     "Men's Hair Salons",
     "Beauty & Spas",
-    20
+    20,
+    5.0
   ],
   [
     102,
     "Nail Salons",
     "Beauty & Spas",
-    307
+    307,
+    9.0
   ],
   [
     589,
     "Permanent Makeup",
     "Beauty & Spas",
-    1
+    1,
+    4.0
   ],
   [
     277,
     "Piercing",
     "Beauty & Spas",
-    6
+    6,
+    5.0
   ],
   [
     294,
     "Skin Care",
     "Beauty & Spas",
-    104
+    104,
+    8.0
   ],
   [
     120,
     "Tanning",
     "Beauty & Spas",
-    53
+    53,
+    9.0
   ],
   [
     308,
     "Tattoo",
     "Beauty & Spas",
-    17
+    17,
+    5.0
   ],
   [
     420,
     "Adult",
     "Shopping",
-    6
+    6,
+    7.0
   ],
   [
     329,
     "Antiques",
     "Shopping",
-    46
+    46,
+    11.0
   ],
   [
     219,
     "Art Galleries",
     "Shopping",
-    52
+    52,
+    17.0
   ],
   [
     28,
     "Arts & Crafts",
     "Shopping",
-    119
+    119,
+    9.0
   ],
   [
     350,
     "Baby Gear & Furniture",
     "Shopping",
-    40
+    40,
+    8.0
   ],
   [
     216,
     "Books, Mags, Music & Video",
     "Shopping",
-    129
+    129,
+    13.0
   ],
   [
     217,
     "Bookstores",
     "Shopping",
-    52
+    52,
+    13.0
   ],
   [
     99,
     "Bridal",
     "Shopping",
-    17
+    17,
+    11.0
   ],
   [
     218,
     "Comic Books",
     "Shopping",
-    12
+    12,
+    11.0
   ],
   [
     424,
     "Computers",
     "Shopping",
-    16
+    16,
+    22.0
   ],
   [
     72,
     "Cosmetics & Beauty Supply",
     "Shopping",
-    157
+    157,
+    7.0
   ],
   [
     194,
     "Costumes",
     "Shopping",
-    13
+    13,
+    11.0
   ],
   [
     352,
     "Discount Store",
     "Shopping",
-    28
+    28,
+    7.0
   ],
   [
     70,
     "Drugstores",
     "Shopping",
-    195
+    195,
+    7.0
   ],
   [
     227,
     "Electronics",
     "Shopping",
-    80
+    80,
+    7.0
   ],
   [
     161,
     "Eyewear & Opticians",
     "Shopping",
-    71
+    71,
+    6.0
   ],
   [
     339,
     "Fabric Stores",
     "Shopping",
-    23
+    23,
+    8.0
   ],
   [
     6,
     "Fashion",
     "Shopping",
-    701
+    701,
+    9.0
   ],
   [
     258,
     "Flowers & Gifts",
     "Shopping",
-    127
+    127,
+    8.0
   ],
   [
     425,
     "Formal Wear",
     "Shopping",
-    10
+    10,
+    7.0
   ],
   [
     27,
     "Framing",
     "Shopping",
-    5
+    5,
+    8.0
   ],
   [
     397,
     "Gift Shops",
     "Shopping",
-    7
+    7,
+    8.0
   ],
   [
     450,
     "Guns & Ammo",
     "Shopping",
-    11
+    11,
+    11.0
   ],
   [
     552,
     "Hats",
     "Shopping",
-    1
+    1,
+    4.0
   ],
   [
     262,
     "Hobby Shops",
     "Shopping",
-    46
+    46,
+    7.0
   ],
   [
     68,
     "Home & Garden",
     "Shopping",
-    378
+    378,
+    8.0
   ],
   [
     79,
     "Home Decor",
     "Shopping",
-    80
+    80,
+    10.0
   ],
   [
     402,
     "Hot Tub & Pool",
     "Shopping",
-    22
+    22,
+    4.0
   ],
   [
     228,
     "Jewelry",
     "Shopping",
-    110
+    110,
+    7.0
   ],
   [
     75,
     "Kitchen & Bath",
     "Shopping",
-    31
+    31,
+    7.0
   ],
   [
     481,
     "Knitting Supplies",
     "Shopping",
-    1
+    1,
+    4.0
   ],
   [
     359,
     "Leather Goods",
     "Shopping",
-    10
+    10,
+    5.0
   ],
   [
     237,
     "Lingerie",
     "Shopping",
-    28
+    28,
+    6.0
   ],
   [
     276,
     "Luggage",
     "Shopping",
-    5
+    5,
+    4.0
   ],
   [
     408,
     "Maternity Wear",
     "Shopping",
-    3
+    3,
+    6.0
   ],
   [
     235,
     "Mattresses",
     "Shopping",
-    16
+    16,
+    5.0
   ],
   [
     464,
     "Medical Supplies",
     "Shopping",
-    1
+    1,
+    7.0
   ],
   [
     10,
     "Men's Clothing",
     "Shopping",
-    118
+    118,
+    11.0
   ],
   [
     226,
     "Mobile Phones",
     "Shopping",
-    102
+    102,
+    9.0
   ],
   [
     236,
     "Music & DVDs",
     "Shopping",
-    30
+    30,
+    17.0
   ],
   [
     179,
     "Musical Instruments & Teachers",
     "Shopping",
-    29
+    29,
+    13.0
   ],
   [
     118,
     "Nurseries & Gardening",
     "Shopping",
-    60
+    60,
+    9.0
   ],
   [
     142,
     "Office Equipment",
     "Shopping",
-    41
+    41,
+    5.0
   ],
   [
     143,
     "Outlet Stores",
     "Shopping",
-    18
+    18,
+    27.0
   ],
   [
     452,
     "Pawn Shops",
     "Shopping",
-    10
+    10,
+    4.0
   ],
   [
     331,
     "Personal Shopping",
     "Shopping",
-    6
+    6,
+    15.0
   ],
   [
     462,
     "Photography Stores & Services",
     "Shopping",
-    10
+    10,
+    7.0
   ],
   [
     574,
     "Plus Size Fashion",
     "Shopping",
-    1
+    1,
+    4.0
   ],
   [
     560,
     "Rugs",
     "Shopping",
-    1
+    1,
+    6.0
   ],
   [
     83,
     "Shoe Stores",
     "Shopping",
-    77
+    77,
+    10.0
   ],
   [
     63,
     "Shopping Centers",
     "Shopping",
-    37
+    37,
+    45.0
   ],
   [
     76,
     "Sporting Goods",
     "Shopping",
-    157
+    157,
+    10.0
   ],
   [
     77,
     "Sports Wear",
     "Shopping",
-    42
+    42,
+    11.0
   ],
   [
     358,
     "Swimwear",
     "Shopping",
-    5
+    5,
+    5.0
   ],
   [
     188,
     "Thrift Stores",
     "Shopping",
-    82
+    82,
+    7.0
   ],
   [
     131,
     "Tobacco Shops",
     "Shopping",
-    60
+    60,
+    6.0
   ],
   [
     282,
     "Toy Stores",
     "Shopping",
-    35
+    35,
+    12.0
   ],
   [
     497,
     "Uniforms",
     "Shopping",
-    3
+    3,
+    4.0
   ],
   [
     290,
     "Used, Vintage & Consignment",
     "Shopping",
-    72
+    72,
+    12.0
   ],
   [
     261,
     "Videos & Video Game Rental",
     "Shopping",
-    32
+    32,
+    5.0
   ],
   [
     302,
     "Vinyl Records",
     "Shopping",
-    6
+    6,
+    12.0
   ],
   [
     251,
     "Watches",
     "Shopping",
-    18
+    18,
+    6.0
   ],
   [
     253,
     "Wholesale Stores",
     "Shopping",
-    28
+    28,
+    19.0
   ],
   [
     524,
     "Wigs",
     "Shopping",
-    4
+    4,
+    8.0
   ],
   [
     9,
     "Women's Clothing",
     "Shopping",
-    227
+    227,
+    9.0
   ],
   [
     498,
     "Adult Entertainment",
     "Nightlife",
-    8
+    8,
+    7.0
   ],
   [
     41,
     "Bars",
     "Nightlife",
-    628
+    628,
+    67.0
   ],
   [
     465,
     "Cocktail Bars",
     "Nightlife",
-    6
+    6,
+    45.0
   ],
   [
     463,
     "Comedy Clubs",
     "Nightlife",
-    5
+    5,
+    73.0
   ],
   [
     65,
     "Dance Clubs",
     "Nightlife",
-    43
+    43,
+    28.0
   ],
   [
     172,
     "Dive Bars",
     "Nightlife",
-    55
+    55,
+    35.0
   ],
   [
     365,
     "Gay Bars",
     "Nightlife",
-    29
+    29,
+    19.0
   ],
   [
     354,
     "Hookah Bars",
     "Nightlife",
-    9
+    9,
+    14.0
   ],
   [
     456,
     "Jazz & Blues",
     "Nightlife",
-    11
+    11,
+    24.0
   ],
   [
     346,
     "Karaoke",
     "Nightlife",
-    24
+    24,
+    42.0
   ],
   [
     56,
     "Lounges",
     "Nightlife",
-    103
+    103,
+    69.0
   ],
   [
     264,
     "Music Venues",
     "Nightlife",
-    71
+    71,
+    61.0
   ],
   [
     508,
     "Piano Bars",
     "Nightlife",
-    2
+    2,
+    124.0
   ],
   [
     483,
     "Pool Halls",
     "Nightlife",
-    13
+    13,
+    18.0
   ],
   [
     239,
     "Pubs",
     "Nightlife",
-    57
+    57,
+    132.0
   ],
   [
     89,
     "Sports Bars",
     "Nightlife",
-    173
+    173,
+    41.0
   ],
   [
     135,
     "Wine Bars",
     "Nightlife",
-    64
+    64,
+    107.0
   ],
   [
     62,
     "Appliances & Repair",
     "Local Services",
-    25
+    25,
+    5.0
   ],
   [
     419,
     "Bail Bondsmen",
     "Local Services",
-    1
+    1,
+    3.0
   ],
   [
     412,
     "Bike Repair/Maintenance",
     "Local Services",
-    3
+    3,
+    20.0
   ],
   [
     222,
     "Carpet Cleaning",
     "Local Services",
-    31
+    31,
+    5.0
   ],
   [
     454,
     "Child Care & Day Care",
     "Local Services",
-    17
+    17,
+    5.0
   ],
   [
     129,
     "Community Service/Non-Profit",
     "Local Services",
-    30
+    30,
+    6.0
   ],
   [
     158,
     "Couriers & Delivery Services",
     "Local Services",
-    10
+    10,
+    4.0
   ],
   [
     44,
     "Dry Cleaning & Laundry",
     "Local Services",
-    130
+    130,
+    6.0
   ],
   [
     307,
     "Electronics Repair",
     "Local Services",
-    10
+    10,
+    9.0
   ],
   [
     509,
     "Funeral Services & Cemeteries",
     "Local Services",
-    3
+    3,
+    5.0
   ],
   [
     460,
     "Furniture Reupholstery",
     "Local Services",
-    5
+    5,
+    8.0
   ],
   [
     306,
     "IT Services & Computer Repair",
     "Local Services",
-    39
+    39,
+    9.0
   ],
   [
     327,
     "Jewelry Repair",
     "Local Services",
-    3
+    3,
+    11.0
   ],
   [
     531,
     "Junk Removal & Hauling",
     "Local Services",
-    1
+    1,
+    8.0
   ],
   [
     305,
     "Mobile Phone Repair",
     "Local Services",
-    8
+    8,
+    4.0
   ],
   [
     507,
     "Notaries",
     "Local Services",
-    6
+    6,
+    5.0
   ],
   [
     152,
     "Pest Control",
     "Local Services",
-    36
+    36,
+    5.0
   ],
   [
     180,
     "Printing Services",
     "Local Services",
-    62
+    62,
+    5.0
   ],
   [
     458,
     "Recording & Rehearsal Studios",
     "Local Services",
-    3
+    3,
+    4.0
   ],
   [
     488,
     "Recycling Center",
     "Local Services",
-    3
+    3,
+    3.0
   ],
   [
     575,
     "Screen Printing",
     "Local Services",
-    1
+    1,
+    4.0
   ],
   [
     467,
     "Screen Printing/T-Shirt Printing",
     "Local Services",
-    3
+    3,
+    4.0
   ],
   [
     200,
     "Self Storage",
     "Local Services",
-    26
+    26,
+    4.0
   ],
   [
     289,
     "Sewing & Alterations",
     "Local Services",
-    47
+    47,
+    8.0
   ],
   [
     159,
     "Shipping Centers",
     "Local Services",
-    64
+    64,
+    5.0
   ],
   [
     250,
     "Shoe Repair",
     "Local Services",
-    20
+    20,
+    7.0
   ],
   [
     252,
     "Watch Repair",
     "Local Services",
-    10
+    10,
+    9.0
   ],
   [
     214,
     "Yelp Events",
     "Local Flavor",
-    11
+    11,
+    14.0
   ],
   [
     537,
     "Animal Shelters",
     "Pets",
-    11
+    11,
+    5.0
   ],
   [
     12,
     "Pet Services",
     "Pets",
-    159
+    159,
+    8.0
   ],
   [
     47,
     "Pet Stores",
     "Pets",
-    104
+    104,
+    9.0
   ],
   [
     46,
     "Pet Training",
     "Pets",
-    44
+    44,
+    7.0
   ],
   [
     15,
     "Veterinarians",
     "Pets",
-    101
+    101,
+    7.0
   ],
   [
     224,
     "Afghan",
     "Restaurants",
-    5
+    5,
+    34.0
   ],
   [
     399,
     "African",
     "Restaurants",
-    4
+    4,
+    77.0
   ],
   [
     124,
     "American (New)",
     "Restaurants",
-    441
+    441,
+    85.0
   ],
   [
     88,
     "American (Traditional)",
     "Restaurants",
-    607
+    607,
+    48.0
   ],
   [
     579,
     "Argentine",
     "Restaurants",
-    1
+    1,
+    8.0
   ],
   [
     128,
     "Asian Fusion",
     "Restaurants",
-    104
+    104,
+    68.0
   ],
   [
     87,
     "Barbeque",
     "Restaurants",
-    119
+    119,
+    49.0
   ],
   [
     536,
     "Beer Hall",
     "Restaurants",
-    1
+    1,
+    5.0
   ],
   [
     583,
     "Brasseries",
     "Restaurants",
-    1
+    1,
+    133.0
   ],
   [
     317,
     "Brazilian",
     "Restaurants",
-    3
+    3,
+    114.0
   ],
   [
     24,
     "Breakfast & Brunch",
     "Restaurants",
-    312
+    312,
+    77.0
   ],
   [
     246,
     "British",
     "Restaurants",
-    6
+    6,
+    271.0
   ],
   [
     162,
     "Buffets",
     "Restaurants",
-    133
+    133,
+    34.0
   ],
   [
     78,
     "Burgers",
     "Restaurants",
-    380
+    380,
+    41.0
   ],
   [
     522,
     "Burmese",
     "Restaurants",
-    1
+    1,
+    31.0
   ],
   [
     149,
     "Cafes",
     "Restaurants",
-    109
+    109,
+    47.0
   ],
   [
     401,
     "Cajun/Creole",
     "Restaurants",
-    17
+    17,
+    54.0
   ],
   [
     525,
     "Cambodian",
     "Restaurants",
-    1
+    1,
+    180.0
   ],
   [
     266,
     "Caribbean",
     "Restaurants",
-    19
+    19,
+    83.0
   ],
   [
     288,
     "Cheesesteaks",
     "Restaurants",
-    18
+    18,
+    59.0
   ],
   [
     153,
     "Chicken Wings",
     "Restaurants",
-    109
+    109,
+    18.0
   ],
   [
     92,
     "Chinese",
     "Restaurants",
-    346
+    346,
+    34.0
   ],
   [
     101,
     "Comfort Food",
     "Restaurants",
-    17
+    17,
+    29.0
   ],
   [
     309,
     "Creperies",
     "Restaurants",
-    10
+    10,
+    57.0
   ],
   [
     396,
     "Cuban",
     "Restaurants",
-    11
+    11,
+    47.0
   ],
   [
     191,
     "Delis",
     "Restaurants",
-    185
+    185,
+    32.0
   ],
   [
     223,
     "Dim Sum",
     "Restaurants",
-    7
+    7,
+    89.0
   ],
   [
     232,
     "Diners",
     "Restaurants",
-    69
+    69,
+    37.0
   ],
   [
     501,
     "Ethiopian",
     "Restaurants",
-    5
+    5,
+    80.0
   ],
   [
     48,
     "Fast Food",
     "Restaurants",
-    599
+    599,
+    12.0
   ],
   [
     123,
     "Filipino",
     "Restaurants",
-    12
+    12,
+    28.0
   ],
   [
     340,
     "Fish & Chips",
     "Restaurants",
-    21
+    21,
+    34.0
   ],
   [
     516,
     "Fondue",
     "Restaurants",
-    4
+    4,
+    113.0
   ],
   [
     295,
     "Food Stands",
     "Restaurants",
-    10
+    10,
+    13.0
   ],
   [
     204,
     "French",
     "Restaurants",
-    30
+    30,
+    77.0
   ],
   [
     381,
     "Gastropubs",
     "Restaurants",
-    17
+    17,
+    110.0
   ],
   [
     134,
     "German",
     "Restaurants",
-    6
+    6,
+    108.0
   ],
   [
     181,
     "Gluten-Free",
     "Restaurants",
-    49
+    49,
+    66.0
   ],
   [
     169,
     "Greek",
     "Restaurants",
-    91
+    91,
+    45.0
   ],
   [
     370,
     "Halal",
     "Restaurants",
-    8
+    8,
+    70.0
   ],
   [
     195,
     "Hawaiian",
     "Restaurants",
-    30
+    30,
+    64.0
   ],
   [
     198,
     "Hot Dogs",
     "Restaurants",
-    71
+    71,
+    45.0
   ],
   [
     127,
     "Indian",
     "Restaurants",
-    40
+    40,
+    61.0
   ],
   [
     363,
     "Irish",
     "Restaurants",
-    17
+    17,
+    115.0
   ],
   [
     154,
     "Italian",
     "Restaurants",
-    365
+    365,
+    71.0
   ],
   [
     207,
     "Japanese",
     "Restaurants",
-    156
+    156,
+    61.0
   ],
   [
     269,
     "Korean",
     "Restaurants",
-    31
+    31,
+    42.0
   ],
   [
     356,
     "Kosher",
     "Restaurants",
-    3
+    3,
+    21.0
   ],
   [
     215,
     "Latin American",
     "Restaurants",
-    32
+    32,
+    93.0
   ],
   [
     165,
     "Mediterranean",
     "Restaurants",
-    123
+    123,
+    70.0
   ],
   [
     16,
     "Mexican",
     "Restaurants",
-    822
+    822,
+    37.0
   ],
   [
     171,
     "Middle Eastern",
     "Restaurants",
-    47
+    47,
+    48.0
   ],
   [
     492,
     "Modern European",
     "Restaurants",
-    3
+    3,
+    82.0
   ],
   [
     515,
     "Mongolian",
     "Restaurants",
-    11
+    11,
+    55.0
   ],
   [
     567,
     "Moroccan",
     "Restaurants",
-    2
+    2,
+    56.0
   ],
   [
     126,
     "Pakistani",
     "Restaurants",
-    17
+    17,
+    48.0
   ],
   [
     320,
     "Persian/Iranian",
     "Restaurants",
-    7
+    7,
+    63.0
   ],
   [
     372,
     "Peruvian",
     "Restaurants",
-    6
+    6,
+    27.0
   ],
   [
     530,
     "Pita",
     "Restaurants",
-    1
+    1,
+    3.0
   ],
   [
     111,
     "Pizza",
     "Restaurants",
-    589
+    589,
+    44.0
   ],
   [
     398,
     "Polish",
     "Restaurants",
-    7
+    7,
+    53.0
   ],
   [
     314,
     "Russian",
     "Restaurants",
-    2
+    2,
+    10.0
   ],
   [
     147,
     "Salad",
     "Restaurants",
-    64
+    64,
+    78.0
   ],
   [
     25,
     "Sandwiches",
     "Restaurants",
-    609
+    609,
+    39.0
   ],
   [
     535,
     "Scandinavian",
     "Restaurants",
-    3
+    3,
+    96.0
   ],
   [
     84,
     "Seafood",
     "Restaurants",
-    108
+    108,
+    69.0
   ],
   [
     174,
     "Soul Food",
     "Restaurants",
-    16
+    16,
+    95.0
   ],
   [
     391,
     "Soup",
     "Restaurants",
-    13
+    13,
+    66.0
   ],
   [
     418,
     "Southern",
     "Restaurants",
-    19
+    19,
+    95.0
   ],
   [
     242,
     "Spanish",
     "Restaurants",
-    8
+    8,
+    59.0
   ],
   [
     141,
     "Steakhouses",
     "Restaurants",
-    120
+    120,
+    74.0
   ],
   [
     206,
     "Sushi Bars",
     "Restaurants",
-    124
+    124,
+    93.0
   ],
   [
     287,
     "Szechuan",
     "Restaurants",
-    4
+    4,
+    167.0
   ],
   [
     392,
     "Taiwanese",
     "Restaurants",
-    3
+    3,
+    67.0
   ],
   [
     334,
     "Tapas Bars",
     "Restaurants",
-    4
+    4,
+    30.0
   ],
   [
     527,
     "Tapas/Small Plates",
     "Restaurants",
-    8
+    8,
+    104.0
   ],
   [
     132,
     "Tex-Mex",
     "Restaurants",
-    112
+    112,
+    29.0
   ],
   [
     197,
     "Thai",
     "Restaurants",
-    93
+    93,
+    69.0
   ],
   [
     533,
     "Turkish",
     "Restaurants",
-    3
+    3,
+    49.0
   ],
   [
     233,
     "Vegan",
     "Restaurants",
-    26
+    26,
+    119.0
   ],
   [
     146,
     "Vegetarian",
     "Restaurants",
-    55
+    55,
+    130.0
   ],
   [
     61,
     "Vietnamese",
     "Restaurants",
-    68
+    68,
+    68.0
   ],
   [
     453,
     "Accountants",
     "Professional Services",
-    21
+    21,
+    5.0
   ],
   [
     389,
     "Advertising",
     "Professional Services",
-    6
+    6,
+    5.0
   ],
   [
     550,
     "Architects",
     "Professional Services",
-    1
+    1,
+    3.0
   ],
   [
     487,
     "Boat Repair",
     "Professional Services",
-    3
+    3,
+    3.0
   ],
   [
     434,
     "Career Counseling",
     "Professional Services",
-    3
+    3,
+    4.0
   ],
   [
     433,
     "Employment Agencies",
     "Professional Services",
-    7
+    7,
+    4.0
   ],
   [
     388,
     "Graphic Design",
     "Professional Services",
-    26
+    26,
+    4.0
   ],
   [
     366,
     "Lawyers",
     "Professional Services",
-    20
+    20,
+    4.0
   ],
   [
     532,
     "Life Coach",
     "Professional Services",
-    4
+    4,
+    6.0
   ],
   [
     122,
     "Marketing",
     "Professional Services",
-    8
+    8,
+    4.0
   ],
   [
     421,
     "Office Cleaning",
     "Professional Services",
-    10
+    10,
+    5.0
   ],
   [
     570,
     "Personal Assistants",
     "Professional Services",
-    1
+    1,
+    7.0
   ],
   [
     367,
     "Personal Injury Law",
     "Professional Services",
-    5
+    5,
+    3.0
   ],
   [
     553,
     "Private Investigation",
     "Professional Services",
-    2
+    2,
+    4.0
   ],
   [
     517,
     "Real Estate Law",
     "Professional Services",
-    2
+    2,
+    4.0
   ],
   [
     557,
     "Talent Agencies",
     "Professional Services",
-    1
+    1,
+    3.0
   ],
   [
     556,
     "Video/Film Production",
     "Professional Services",
-    2
+    2,
+    4.0
   ],
   [
     121,
     "Web Design",
     "Professional Services",
-    19
+    19,
+    4.0
   ],
   [
     328,
     "Adult Education",
     "Education",
-    4
+    4,
+    3.0
   ],
   [
     383,
     "Colleges & Universities",
     "Education",
-    20
+    20,
+    6.0
   ],
   [
     445,
     "Educational Services",
     "Education",
-    2
+    2,
+    4.0
   ],
   [
     387,
     "Elementary Schools",
     "Education",
-    16
+    16,
+    4.0
   ],
   [
     355,
     "Middle Schools & High Schools",
     "Education",
-    17
+    17,
+    4.0
   ],
   [
     444,
     "Preschools",
     "Education",
-    20
+    20,
+    4.0
   ],
   [
     409,
     "Special Education",
     "Education",
-    5
+    5,
+    4.0
   ],
   [
     208,
     "Specialty Schools",
     "Education",
-    50
+    50,
+    6.0
   ],
   [
     503,
     "Swimming Lessons/Schools",
     "Education",
-    5
+    5,
+    10.0
   ],
   [
     443,
     "Tutoring Centers",
     "Education",
-    2
+    2,
+    4.0
   ],
   [
     519,
     "Vocational & Technical School",
     "Education",
-    1
+    1,
+    11.0
   ],
   [
     281,
     "Building Supplies",
     "Home Services",
-    25
+    25,
+    6.0
   ],
   [
     514,
     "Carpet Installation",
     "Home Services",
-    5
+    5,
+    4.0
   ],
   [
     400,
     "Carpeting",
     "Home Services",
-    13
+    13,
+    5.0
   ],
   [
     60,
     "Contractors",
     "Home Services",
-    73
+    73,
+    5.0
   ],
   [
     192,
     "Damage Restoration",
     "Home Services",
-    2
+    2,
+    4.0
   ],
   [
     468,
     "Door Sales/Installation",
     "Home Services",
-    3
+    3,
+    4.0
   ],
   [
     58,
     "Electricians",
     "Home Services",
-    22
+    22,
+    5.0
   ],
   [
     244,
     "Flooring",
     "Home Services",
-    26
+    26,
+    5.0
   ],
   [
     373,
     "Garage Door Services",
     "Home Services",
-    7
+    7,
+    5.0
   ],
   [
     155,
     "Gardeners",
     "Home Services",
-    9
+    9,
+    4.0
   ],
   [
     405,
     "Handyman",
     "Home Services",
-    20
+    20,
+    7.0
   ],
   [
     59,
     "Heating & Air Conditioning/HVAC",
     "Home Services",
-    62
+    62,
+    6.0
   ],
   [
     265,
     "Home Cleaning",
     "Home Services",
-    41
+    41,
+    6.0
   ],
   [
     303,
     "Home Inspectors",
     "Home Services",
-    8
+    8,
+    3.0
   ],
   [
     489,
     "Home Theatre Installation",
     "Home Services",
-    6
+    6,
+    4.0
   ],
   [
     377,
     "Home Window Tinting",
     "Home Services",
-    4
+    4,
+    5.0
   ],
   [
     140,
     "Interior Design",
     "Home Services",
-    21
+    21,
+    4.0
   ],
   [
     115,
     "Internet Service Providers",
     "Home Services",
-    37
+    37,
+    6.0
   ],
   [
     304,
     "Irrigation",
     "Home Services",
-    3
+    3,
+    4.0
   ],
   [
     178,
     "Keys & Locksmiths",
     "Home Services",
-    19
+    19,
+    10.0
   ],
   [
     479,
     "Landscape Architects",
     "Home Services",
-    3
+    3,
+    5.0
   ],
   [
     156,
     "Landscaping",
     "Home Services",
-    37
+    37,
+    4.0
   ],
   [
     66,
     "Lighting Fixtures & Equipment",
     "Home Services",
-    16
+    16,
+    7.0
   ],
   [
     466,
     "Masonry/Concrete",
     "Home Services",
-    4
+    4,
+    4.0
   ],
   [
     199,
     "Movers",
     "Home Services",
-    32
+    32,
+    4.0
   ],
   [
     385,
     "Painters",
     "Home Services",
-    15
+    15,
+    5.0
   ],
   [
     249,
     "Plumbing",
     "Home Services",
-    45
+    45,
+    6.0
   ],
   [
     319,
     "Pool Cleaners",
     "Home Services",
-    30
+    30,
+    5.0
   ],
   [
     21,
     "Real Estate",
     "Home Services",
-    216
+    216,
+    4.0
   ],
   [
     390,
     "Real Estate Agents",
     "Home Services",
-    33
+    33,
+    4.0
   ],
   [
     18,
     "Real Estate Services",
     "Home Services",
-    27
+    27,
+    4.0
   ],
   [
     404,
     "Roofing",
     "Home Services",
-    8
+    8,
+    4.0
   ],
   [
     272,
     "Security Systems",
     "Home Services",
-    10
+    10,
+    5.0
   ],
   [
     482,
     "Shades & Blinds",
     "Home Services",
-    11
+    11,
+    6.0
   ],
   [
     442,
     "Shared Office Spaces",
     "Home Services",
-    1
+    1,
+    15.0
   ],
   [
     499,
     "Solar Installation",
     "Home Services",
-    4
+    4,
+    4.0
   ],
   [
     185,
     "Television Service Providers",
     "Home Services",
-    12
+    12,
+    6.0
   ],
   [
     157,
     "Tree Services",
     "Home Services",
-    9
+    9,
+    3.0
   ],
   [
     457,
     "Utilities",
     "Home Services",
-    1
+    1,
+    4.0
   ],
   [
     284,
     "Window Washing",
     "Home Services",
-    6
+    6,
+    7.0
   ],
   [
     413,
     "Windows Installation",
     "Home Services",
-    14
+    14,
+    4.0
   ],
   [
     590,
     "Bartenders",
     "Event Planning & Services",
-    1
+    1,
+    5.0
   ],
   [
     257,
     "Cards & Stationery",
     "Event Planning & Services",
-    22
+    22,
+    8.0
   ],
   [
     183,
     "Caterers",
     "Event Planning & Services",
-    43
+    43,
+    16.0
   ],
   [
     447,
     "DJs",
     "Event Planning & Services",
-    10
+    10,
+    5.0
   ],
   [
     539,
     "Magicians",
     "Event Planning & Services",
-    2
+    2,
+    6.0
   ],
   [
     565,
     "Newspapers & Magazines",
     "Event Planning & Services",
-    1
+    1,
+    4.0
   ],
   [
     473,
     "Officiants",
     "Event Planning & Services",
-    2
+    2,
+    4.0
   ],
   [
     322,
     "Party & Event Planning",
     "Event Planning & Services",
-    40
+    40,
+    9.0
   ],
   [
     427,
     "Party Equipment Rentals",
     "Event Planning & Services",
-    5
+    5,
+    5.0
   ],
   [
     193,
     "Party Supplies",
     "Event Planning & Services",
-    23
+    23,
+    6.0
   ],
   [
     93,
     "Photographers",
     "Event Planning & Services",
-    39
+    39,
+    4.0
   ],
   [
     426,
     "Session Photography",
     "Event Planning & Services",
-    9
+    9,
+    5.0
   ],
   [
     64,
     "Venues & Event Spaces",
     "Event Planning & Services",
-    97
+    97,
+    19.0
   ],
   [
     133,
     "Videographers",
     "Event Planning & Services",
-    4
+    4,
+    4.0
   ],
   [
     259,
     "Wedding Planning",
     "Event Planning & Services",
-    21
+    21,
+    6.0
   ],
   [
     190,
     "Bagels",
     "Food",
-    68
+    68,
+    32.0
   ],
   [
     22,
     "Bakeries",
     "Food",
-    203
+    203,
+    29.0
   ],
   [
     238,
     "Beer, Wine & Spirits",
     "Food",
-    102
+    102,
+    35.0
   ],
   [
     393,
     "Breweries",
     "Food",
-    31
+    31,
+    122.0
   ],
   [
     576,
     "Bubble Tea",
     "Food",
-    2
+    2,
+    34.0
   ],
   [
     566,
     "Butcher",
     "Food",
-    2
+    2,
+    42.0
   ],
   [
     505,
     "CSA",
     "Food",
-    2
+    2,
+    9.0
   ],
   [
     97,
     "Coffee & Tea",
     "Food",
-    404
+    404,
+    32.0
   ],
   [
     71,
     "Convenience Stores",
     "Food",
-    193
+    193,
+    7.0
   ],
   [
     94,
     "Desserts",
     "Food",
-    115
+    115,
+    40.0
   ],
   [
     376,
     "Do-It-Yourself Food",
     "Food",
-    11
+    11,
+    11.0
   ],
   [
     100,
     "Donuts",
     "Food",
-    79
+    79,
+    18.0
   ],
   [
     292,
     "Farmers Market",
     "Food",
-    51
+    51,
+    23.0
   ],
   [
     571,
     "Food Court",
     "Food",
-    1
+    1,
+    195.0
   ],
   [
     369,
     "Food Delivery Services",
     "Food",
-    24
+    24,
+    19.0
   ],
   [
     324,
     "Food Trucks",
     "Food",
-    29
+    29,
+    32.0
   ],
   [
     301,
     "Gelato",
     "Food",
-    12
+    12,
+    57.0
   ],
   [
     112,
     "Grocery",
     "Food",
-    408
+    408,
+    18.0
   ],
   [
     144,
     "Ice Cream & Frozen Yogurt",
     "Food",
-    294
+    294,
+    23.0
   ],
   [
     582,
     "Indonesian",
     "Food",
-    1
+    1,
+    8.0
   ],
   [
     98,
     "Internet Cafes",
     "Food",
-    3
+    3,
+    24.0
   ],
   [
     211,
     "Juice Bars & Smoothies",
     "Food",
-    70
+    70,
+    19.0
   ],
   [
     555,
     "Personal Chefs",
     "Food",
-    1
+    1,
+    9.0
   ],
   [
     175,
     "Pretzels",
     "Food",
-    6
+    6,
+    5.0
   ],
   [
     202,
     "Shaved Ice",
     "Food",
-    13
+    13,
+    23.0
   ],
   [
     86,
     "Specialty Food",
     "Food",
-    216
+    216,
+    22.0
   ],
   [
     164,
     "Street Vendors",
     "Food",
-    19
+    19,
+    12.0
   ],
   [
     417,
     "Tea Rooms",
     "Food",
-    8
+    8,
+    54.0
   ],
   [
     313,
     "Wineries",
     "Food",
-    8
+    8,
+    31.0
   ],
   [
     247,
     "Print Media",
     "Mass Media",
-    9
+    9,
+    4.0
   ],
   [
     344,
     "Radio Stations",
     "Mass Media",
-    13
+    13,
+    6.0
   ],
   [
     437,
     "Television Stations",
     "Mass Media",
-    2
+    2,
+    10.0
   ],
   [
     484,
     "Airports",
     "Hotels & Travel",
-    10
+    10,
+    130.0
   ],
   [
     379,
     "Bed & Breakfast",
     "Hotels & Travel",
-    5
+    5,
+    5.0
   ],
   [
     459,
     "Campgrounds",
     "Hotels & Travel",
-    3
+    3,
+    16.0
   ],
   [
     186,
     "Car Rental",
     "Hotels & Travel",
-    38
+    38,
+    7.0
   ],
   [
     54,
     "Hotels",
     "Hotels & Travel",
-    341
+    341,
+    23.0
   ],
   [
     545,
     "RV Parks",
     "Hotels & Travel",
-    1
+    1,
+    4.0
   ],
   [
     526,
     "RV Rental",
     "Hotels & Travel",
-    1
+    1,
+    4.0
   ],
   [
     448,
     "Resorts",
     "Hotels & Travel",
-    9
+    9,
+    89.0
   ],
   [
     273,
     "Tours",
     "Hotels & Travel",
-    34
+    34,
+    18.0
   ],
   [
     177,
     "Transportation",
     "Hotels & Travel",
-    47
+    47,
+    20.0
   ],
   [
     201,
     "Travel Services",
     "Hotels & Travel",
-    16
+    16,
+    10.0
   ],
   [
     476,
     "Vacation Rentals",
     "Hotels & Travel",
-    1
+    1,
+    3.0
   ],
   [
     475,
     "Courthouses",
     "Public Services & Government",
-    1
+    1,
+    6.0
   ],
   [
     470,
     "Departments of Motor Vehicles",
     "Public Services & Government",
-    10
+    10,
+    12.0
   ],
   [
     472,
     "Landmarks & Historical Buildings",
     "Public Services & Government",
-    14
+    14,
+    19.0
   ],
   [
     293,
     "Libraries",
     "Public Services & Government",
-    30
+    30,
+    12.0
   ],
   [
     205,
     "Police Departments",
     "Public Services & Government",
-    1
+    1,
+    3.0
   ],
   [
     166,
     "Post Offices",
     "Public Services & Government",
-    37
+    37,
+    7.0
   ],
   [
     73,
     "Banks & Credit Unions",
     "Financial Services",
-    94
+    94,
+    4.0
   ],
   [
     494,
     "Check Cashing/Pay-day Loans",
     "Financial Services",
-    2
+    2,
+    3.0
   ],
   [
     325,
     "Financial Advising",
     "Financial Services",
-    15
+    15,
+    4.0
   ],
   [
     95,
     "Insurance",
     "Financial Services",
-    30
+    30,
+    4.0
   ],
   [
     332,
     "Investing",
     "Financial Services",
-    4
+    4,
+    4.0
   ],
   [
     540,
     "Payroll Services",
     "Financial Services",
-    1
+    1,
+    9.0
   ],
   [
     469,
     "Tax Services",
     "Financial Services",
-    15
+    15,
+    4.0
   ],
   [
     278,
     "Acupuncture",
     "Health & Medical",
-    19
+    19,
+    4.0
   ],
   [
     315,
     "Cannabis Clinics",
     "Health & Medical",
-    3
+    3,
+    6.0
   ],
   [
     221,
     "Chiropractors",
     "Health & Medical",
-    76
+    76,
+    5.0
   ],
   [
     471,
     "Counseling & Mental Health",
     "Health & Medical",
-    9
+    9,
+    4.0
   ],
   [
     108,
     "Dentists",
     "Health & Medical",
-    209
+    209,
+    5.0
   ],
   [
     33,
     "Diagnostic Services",
     "Health & Medical",
-    13
+    13,
+    5.0
   ],
   [
     57,
     "Doctors",
     "Health & Medical",
-    250
+    250,
+    5.0
   ],
   [
     336,
     "Ear Nose & Throat",
     "Health & Medical",
-    8
+    8,
+    6.0
   ],
   [
     384,
     "Endodontists",
     "Health & Medical",
-    4
+    4,
+    6.0
   ],
   [
     353,
     "Family Practice",
     "Health & Medical",
-    39
+    39,
+    6.0
   ],
   [
     234,
     "Fertility",
     "Health & Medical",
-    2
+    2,
+    5.0
   ],
   [
     136,
     "General Dentistry",
     "Health & Medical",
-    130
+    130,
+    6.0
   ],
   [
     580,
     "Hearing Aid Providers",
     "Health & Medical",
-    1
+    1,
+    9.0
   ],
   [
     541,
     "Home Health Care",
     "Health & Medical",
-    3
+    3,
+    3.0
   ],
   [
     438,
     "Hospice",
     "Health & Medical",
-    1
+    1,
+    3.0
   ],
   [
     323,
     "Hospitals",
     "Health & Medical",
-    21
+    21,
+    6.0
   ],
   [
     490,
     "Hypnosis/Hypnotherapy",
     "Health & Medical",
-    3
+    3,
+    4.0
   ],
   [
     403,
     "Internal Medicine",
     "Health & Medical",
-    9
+    9,
+    4.0
   ],
   [
     333,
     "Laboratory Testing",
     "Health & Medical",
-    8
+    8,
+    4.0
   ],
   [
     395,
     "Laser Eye Surgery/Lasik",
     "Health & Medical",
-    6
+    6,
+    6.0
   ],
   [
     29,
     "Massage Therapy",
     "Health & Medical",
-    29
+    29,
+    6.0
   ],
   [
     91,
     "Medical Centers",
     "Health & Medical",
-    52
+    52,
+    5.0
   ],
   [
     145,
     "Medical Spas",
     "Health & Medical",
-    18
+    18,
+    6.0
   ],
   [
     451,
     "Midwives",
     "Health & Medical",
-    2
+    2,
+    5.0
   ],
   [
     283,
     "Naturopathic/Holistic",
     "Health & Medical",
-    6
+    6,
+    4.0
   ],
   [
     137,
     "Neurologist",
     "Health & Medical",
-    5
+    5,
+    3.0
   ],
   [
     150,
     "Nutritionists",
     "Health & Medical",
-    10
+    10,
+    6.0
   ],
   [
     96,
     "Obstetricians & Gynecologists",
     "Health & Medical",
-    28
+    28,
+    4.0
   ],
   [
     394,
     "Ophthalmologists",
     "Health & Medical",
-    8
+    8,
+    6.0
   ],
   [
     160,
     "Optometrists",
     "Health & Medical",
-    73
+    73,
+    6.0
   ],
   [
     348,
     "Oral Surgeons",
     "Health & Medical",
-    12
+    12,
+    5.0
   ],
   [
     109,
     "Orthodontists",
     "Health & Medical",
-    31
+    31,
+    4.0
   ],
   [
     255,
     "Orthopedists",
     "Health & Medical",
-    11
+    11,
+    4.0
   ],
   [
     107,
     "Pediatric Dentists",
     "Health & Medical",
-    29
+    29,
+    5.0
   ],
   [
     274,
     "Pediatricians",
     "Health & Medical",
-    34
+    34,
+    6.0
   ],
   [
     349,
     "Periodontists",
     "Health & Medical",
-    6
+    6,
+    6.0
   ],
   [
     441,
     "Pharmacy",
     "Health & Medical",
-    3
+    3,
+    5.0
   ],
   [
     220,
     "Physical Therapy",
     "Health & Medical",
-    43
+    43,
+    6.0
   ],
   [
     163,
     "Podiatrists",
     "Health & Medical",
-    7
+    7,
+    4.0
   ],
   [
     493,
     "Psychiatrists",
     "Health & Medical",
-    2
+    2,
+    4.0
   ],
   [
     330,
     "Reflexology",
     "Health & Medical",
-    10
+    10,
+    12.0
   ],
   [
     500,
     "Rehabilitation Center",
     "Health & Medical",
-    2
+    2,
+    5.0
   ],
   [
     561,
     "Retirement Homes",
     "Health & Medical",
-    2
+    2,
+    4.0
   ],
   [
     558,
     "Rolfing",
     "Health & Medical",
-    1
+    1,
+    8.0
   ],
   [
     254,
     "Sports Medicine",
     "Health & Medical",
-    12
+    12,
+    4.0
   ],
   [
     534,
     "Tattoo Removal",
     "Health & Medical",
-    3
+    3,
+    3.0
   ],
   [
     416,
     "Traditional Chinese Medicine",
     "Health & Medical",
-    3
+    3,
+    3.0
   ],
   [
     362,
     "Urgent Care",
     "Health & Medical",
-    45
+    45,
+    7.0
   ],
   [
     551,
     "Urologists",
     "Health & Medical",
-    1
+    1,
+    3.0
   ],
   [
     256,
     "Weight Loss Centers",
     "Health & Medical",
-    18
+    18,
+    5.0
   ],
   [
     422,
     "Barre Classes",
     "Fitness & Instruction",
-    8
+    8,
+    15.0
   ],
   [
     151,
     "Boot Camps",
     "Fitness & Instruction",
-    8
+    8,
+    8.0
   ],
   [
     439,
     "Boxing",
     "Fitness & Instruction",
-    4
+    4,
+    5.0
   ],
   [
     411,
     "Dance Studios",
     "Fitness & Instruction",
-    25
+    25,
+    6.0
   ],
   [
     386,
     "Dog Parks",
     "Parks",
-    20
+    20,
+    21.0
   ],
   [
     3,
     "Horse Racing",
     "Stadiums & Arenas",
-    2
+    2,
+    17.0
   ],
   [
     455,
     "Blow Dry/Out Services",
     "Hair Salons",
-    7
+    7,
+    14.0
   ],
   [
     182,
     "Hair Extensions",
     "Hair Salons",
-    19
+    19,
+    8.0
   ],
   [
     285,
     "Spray Tanning",
     "Tanning",
-    3
+    3,
+    12.0
   ],
   [
     26,
     "Art Supplies",
     "Arts & Crafts",
-    26
+    26,
+    7.0
   ],
   [
     11,
     "Accessories",
     "Fashion",
-    121
+    121,
+    7.0
   ],
   [
     407,
     "Children's Clothing",
     "Fashion",
-    43
+    43,
+    6.0
   ],
   [
     8,
     "Department Stores",
     "Fashion",
-    223
+    223,
+    12.0
   ],
   [
     260,
     "Florists",
     "Flowers & Gifts",
-    78
+    78,
+    8.0
   ],
   [
     119,
     "Appliances",
     "Home & Garden",
-    46
+    46,
+    10.0
   ],
   [
     69,
     "Furniture Stores",
     "Home & Garden",
-    125
+    125,
+    9.0
   ],
   [
     117,
     "Hardware Stores",
     "Home & Garden",
-    90
+    90,
+    8.0
   ],
   [
     585,
     "Flowers",
     "Home Decor",
-    1
+    1,
+    4.0
   ],
   [
     520,
     "Gold Buyers",
     "Jewelry",
-    2
+    2,
+    7.0
   ],
   [
     130,
     "Bikes",
     "Sporting Goods",
-    49
+    49,
+    14.0
   ],
   [
     357,
     "Golf Equipment",
     "Sporting Goods",
-    6
+    6,
+    7.0
   ],
   [
     90,
     "Outdoor Gear",
     "Sporting Goods",
-    22
+    22,
+    13.0
   ],
   [
     55,
     "Champagne Bars",
     "Lounges",
-    2
+    2,
+    61.0
   ],
   [
     414,
     "Dog Walkers",
     "Pet Services",
-    15
+    15,
+    5.0
   ],
   [
     13,
     "Pet Boarding/Pet Sitting",
     "Pet Services",
-    65
+    65,
+    7.0
   ],
   [
     45,
     "Pet Groomers",
     "Pet Services",
-    94
+    94,
+    8.0
   ],
   [
     542,
     "Colombian",
     "Latin American",
-    1
+    1,
+    11.0
   ],
   [
     337,
     "Lebanese",
     "Middle Eastern",
-    3
+    3,
+    68.0
   ],
   [
     572,
     "Cafeteria",
     "Scandinavian",
-    1
+    1,
+    41.0
   ],
   [
     243,
     "Basque",
     "Spanish",
-    3
+    3,
+    44.0
   ],
   [
     347,
     "Live/Raw Food",
     "Vegan",
-    2
+    2,
+    33.0
   ],
   [
     548,
     "Boat Dealers",
     "Boat Repair",
-    1
+    1,
+    3.0
   ],
   [
     513,
     "Bankruptcy Law",
     "Lawyers",
-    5
+    5,
+    4.0
   ],
   [
     477,
     "Business Law",
     "Lawyers",
-    3
+    3,
+    3.0
   ],
   [
     512,
     "Divorce & Family Law",
     "Lawyers",
-    5
+    5,
+    4.0
   ],
   [
     510,
     "Estate Planning Law",
     "Lawyers",
-    7
+    7,
+    4.0
   ],
   [
     368,
     "General Litigation",
     "Lawyers",
-    4
+    4,
+    3.0
   ],
   [
     543,
     "Immigration Law",
     "Lawyers",
-    2
+    2,
+    3.0
   ],
   [
     430,
     "Public Relations",
     "Web Design",
-    1
+    1,
+    5.0
   ],
   [
     410,
     "Private Tutors",
     "Special Education",
-    1
+    1,
+    3.0
   ],
   [
     296,
     "Art Schools",
     "Specialty Schools",
-    10
+    10,
+    8.0
   ],
   [
     375,
     "Cooking Schools",
     "Specialty Schools",
-    7
+    7,
+    9.0
   ],
   [
     431,
     "Cosmetology Schools",
     "Specialty Schools",
-    6
+    6,
+    5.0
   ],
   [
     449,
     "Dance Schools",
     "Specialty Schools",
-    10
+    10,
+    5.0
   ],
   [
     371,
     "Driving Schools",
     "Specialty Schools",
-    4
+    4,
+    4.0
   ],
   [
     528,
     "Flight Instruction",
     "Specialty Schools",
-    1
+    1,
+    5.0
   ],
   [
     544,
     "Massage Schools",
     "Specialty Schools",
-    1
+    1,
+    10.0
   ],
   [
     549,
     "Home Organization",
     "Interior Design",
-    1
+    1,
+    4.0
   ],
   [
     80,
     "Apartments",
     "Real Estate",
-    127
+    127,
+    5.0
   ],
   [
     569,
     "Commercial Real Estate",
     "Real Estate",
-    1
+    1,
+    4.0
   ],
   [
     361,
     "Mortgage Brokers",
     "Real Estate",
-    25
+    25,
+    4.0
   ],
   [
     19,
     "Property Management",
     "Real Estate",
-    17
+    17,
+    4.0
   ],
   [
     546,
     "Home Staging",
     "Real Estate Services",
-    1
+    1,
+    7.0
   ],
   [
     506,
     "Fences & Gates",
     "Windows Installation",
-    1
+    1,
+    4.0
   ],
   [
     564,
     "Clowns",
     "Magicians",
-    1
+    1,
+    3.0
   ],
   [
     588,
     "Laser Tag",
     "Party & Event Planning",
-    1
+    1,
+    12.0
   ],
   [
     584,
     "Matchmakers",
     "Party & Event Planning",
-    1
+    1,
+    3.0
   ],
   [
     428,
     "Event Photography",
     "Photographers",
-    6
+    6,
+    5.0
   ],
   [
     581,
     "Cupcakes",
     "Desserts",
-    1
+    1,
+    4.0
   ],
   [
     184,
     "Candy Stores",
     "Specialty Food",
-    25
+    25,
+    17.0
   ],
   [
     312,
     "Cheese Shops",
     "Specialty Food",
-    6
+    6,
+    22.0
   ],
   [
     351,
     "Chocolatiers & Shops",
     "Specialty Food",
-    14
+    14,
+    18.0
   ],
   [
     113,
     "Ethnic Food",
     "Specialty Food",
-    46
+    46,
+    31.0
   ],
   [
     318,
     "Fruits & Veggies",
     "Specialty Food",
-    15
+    15,
+    25.0
   ],
   [
     173,
     "Health Markets",
     "Specialty Food",
-    48
+    48,
+    25.0
   ],
   [
     495,
     "Herbs & Spices",
     "Specialty Food",
-    3
+    3,
+    22.0
   ],
   [
     446,
     "Meat Shops",
     "Specialty Food",
-    20
+    20,
+    19.0
   ],
   [
     85,
     "Seafood Markets",
     "Specialty Food",
-    5
+    5,
+    21.0
   ],
   [
     502,
     "Boat Charters",
     "Tours",
-    2
+    2,
+    9.0
   ],
   [
     176,
     "Airlines",
     "Transportation",
-    12
+    12,
+    44.0
   ],
   [
     271,
     "Airport Shuttles",
     "Transportation",
-    17
+    17,
+    12.0
   ],
   [
     212,
     "Limos",
     "Transportation",
-    12
+    12,
+    9.0
   ],
   [
     213,
     "Public Transportation",
     "Transportation",
-    8
+    8,
+    25.0
   ],
   [
     270,
     "Taxis",
     "Transportation",
-    13
+    13,
+    8.0
   ],
   [
     563,
     "Party Bus Rentals",
     "Travel Services",
-    1
+    1,
+    4.0
   ],
   [
     245,
     "Cosmetic Dentists",
     "Dentists",
-    69
+    69,
+    5.0
   ],
   [
     34,
     "Diagnostic Imaging",
     "Diagnostic Services",
-    5
+    5,
+    6.0
   ],
   [
     335,
     "Allergists",
     "Doctors",
-    7
+    7,
+    6.0
   ],
   [
     538,
     "Cardiologists",
     "Doctors",
-    3
+    3,
+    6.0
   ],
   [
     210,
     "Cosmetic Surgeons",
     "Doctors",
-    12
+    12,
+    4.0
   ],
   [
     341,
     "Dermatologists",
     "Doctors",
-    26
+    26,
+    5.0
   ],
   [
     578,
     "Anesthesiologists",
     "Neurologist",
-    1
+    1,
+    3.0
   ],
   [
     587,
     "Auction Houses",
     "Furniture Stores",
-    1
+    1,
+    3.0
   ],
   [
     554,
     "Cantonese",
     "Ethnic Food",
-    1
+    1,
+    11.0
   ]
 ]
