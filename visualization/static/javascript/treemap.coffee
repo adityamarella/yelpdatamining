@@ -1,7 +1,6 @@
 categoryDataTable = null
 categoryDataColumns = {}
 adjNounDataTable = null
-selectedCategoryId = -1
 treemap = null
 adjNounCloud = null
 
@@ -34,24 +33,30 @@ google.setOnLoadCallback ->
     showScale: true
 
   adjNounCloud = new TermCloud document.getElementById('adjnoun-tc')
-  getSelectedCategoryId()
-  updateAdjNoun(selectedCategoryId)
+
+  updateVisualizations(0)
 
   google.visualization.events.addListener treemap, 'select', ->
-    getSelectedCategoryId()
-    console.log
-      id: categoryDataTable.getValue selectedCategoryId, categoryDataColumns.category_id
-      title: categoryDataTable.getValue selectedCategoryId, categoryDataColumns.category_title
+    selectedCategoryRow = getSelectedCategoryRow()
+    updateVisualizations(selectedCategoryRow)
 
+  google.visualization.events.addListener treemap, 'rollup', ->
+    selectedCategoryRow = getSelectedCategoryRow()
+    updateVisualizations(selectedCategoryRow)
 
-getSelectedCategoryId = ->
+getSelectedCategoryRow = ->
   selection = treemap.getSelection()
-  selectedCategoryId = selection[0]?.row ? -1
-  return selectedCategoryId
+  selectedCategoryRow = selection[0]?.row ? -1
+  console.log "selected category id: #{selectedCategoryRow}"
+  return selectedCategoryRow
 
-updateAdjNoun = (categoryId) ->
-  # url = "http://amarella-project-data.appspot.com/getinfo?mode=adjectivenoun&format=json&category=#{categoryId}"
-  url = "http://amarella-project-data.appspot.com/getinfo?mode=adjectivenoun&format=json&category=1"
+
+updateVisualizations = (categoryRow) ->
+  updateAdjNoun(categoryRow)
+
+updateAdjNoun = (categoryRow) ->
+  categoryId = categoryDataTable.getValue(categoryRow, categoryDataColumns.category_id)
+  url = "http://amarella-project-data.appspot.com/getinfo?mode=adjectivenoun&format=json&category=#{categoryId}"
 
   jsonData = $.ajax(
     url: url,
@@ -63,12 +68,5 @@ updateAdjNoun = (categoryId) ->
   adjNounDataTable = new google.visualization.DataTable jsonData
   adjNounDataView = new google.visualization.DataView adjNounDataTable
   adjNounDataView.setColumns [1, 2]
-
-  # data = new google.visualization.DataTable()
-  # data.addColumn('string', 'Label')
-  # data.addColumn('number', 'Value')
-  # data.addColumn('string', 'Link')
-  # data.addRow(['Big', 100, ''])
-  # data.addRow(['Small', 10, ''])
 
   adjNounCloud.draw adjNounDataView, null
