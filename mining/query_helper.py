@@ -61,10 +61,11 @@ class Category(object):
     children: is a list of Category objects
     """
 
-    def __init__(self, cid = -1, title="", business_count=0):
+    def __init__(self, cid = -1, title="", business_count=0, avg_review_count=0):
         self.category_id = cid
         self.title = title
         self.business_count = business_count
+        self.avg_review_count = avg_review_count
         self.parent = None
         self.children = []
 
@@ -142,6 +143,9 @@ class CategoryTreeCreator(object):
         # count the businesses for all the nodes
         self.count_businesses(root)
 
+        # calculate the average rating for all the nodes
+        self.calculate_number_of_reviews(root)
+
         return root
 
     def setparent(self, node, parent):
@@ -162,7 +166,8 @@ class CategoryTreeCreator(object):
 
     def count_businesses(self, root):
         stmt = """SELECT
-                    c.id, count(cb.business_id) AS business_count
+                    c.id,
+                    count(cb.business_id) AS business_count
                   FROM categories AS c
                   LEFT JOIN categories_businesses AS cb
                     ON (cb.category_id = c.id)
@@ -171,22 +176,44 @@ class CategoryTreeCreator(object):
         business_counts = {r[0]: r[1] for r in rows}
 
         # traverse tree to update categories
-        categoryStack = []
-        node = root
-        while node is not None:
+        for node in category_tree_traverser(root):
             try:
                 node.business_count = business_counts[node.category_id]
             except KeyError:
                 if node is root:
                     pass
                 else:
-                    print "Error: unable to find count for {}".format(node)
+                    raise
 
-            categoryStack.extend(node.children)
+    def calculate_number_of_reviews(self, root):
+        stmt = """SELECT
+                    c.id,
+                    round(avg(b.review_count)) AS avg_review_count
+                  FROM categories AS c
+                  LEFT JOIN categories_businesses AS cb
+                    ON cb.category_id = c.id
+                  LEFT JOIN businesses AS b
+                    ON cb.business_id = b.id
+                  GROUP BY
+                    c.id;"""
+        rows = self.query_helper.run_query(stmt)
+        avg_review_counts = {r[0]: r[1] for r in rows}
+
+        # traverse tree to update categories
+        for node in category_tree_traverser(root):
             try:
-                node = categoryStack.pop()
-            except IndexError:
-                node = None
+                node.avg_review_count = avg_review_counts[node.category_id]
+            except KeyError:
+                if node is root:
+                    pass
+                else:
+                    raise
+
+def category_tree_traverser(node):
+    yield node
+    for n in node.children:
+        for rn in category_tree_traverser(n):
+            yield rn
 
 class TermCloud(object):
     
@@ -239,13 +266,20 @@ class TermCloud(object):
 
 
 def enumerate_category_tree(root):
-    categories = [("category_id", "category_title", "parent_category", "business_count")]
+    categories = [("category_id",
+                   "category_title",
+                   "parent_category",
+                   "business_count",
+                   "avg_review_count")]
     categoryQueue = deque([(root, None)])
 
     while len(categoryQueue) != 0:
         node, parent_title = categoryQueue.popleft()
-        categories.append((node.category_id, node.title,
-            parent_title, node.business_count))
+        categories.append((node.category_id,
+                           node.title,
+                           parent_title,
+                           node.business_count,
+                           node.avg_review_count))
         [categoryQueue.append((child, node.title)) for child in node.children]
 
     return categories

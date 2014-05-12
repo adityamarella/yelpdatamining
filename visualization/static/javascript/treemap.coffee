@@ -13,16 +13,21 @@ google.setOnLoadCallback ->
   treemap_view.setColumns [
     dataColumns.category_title,
     dataColumns.parent_category,
-    dataColumns.business_count
+    dataColumns.business_count,
+    dataColumns.avg_review_count
   ]
 
   # Create and draw the visualization.
   treemap = new google.visualization.TreeMap document.getElementById('treemap-chart')
   treemap.draw treemap_view,
+    fontColor: '#000000'
     fontSize: 16
-    maxColor: '#00dd00'
-    midColor: '#00bb00'
-    minColor: '#009900'
+    maxColorValue: 100
+    # maxColor: '#f0ad4e'
+    # midColor: '#999C8C'
+    # minColor: '#428bca'
+    minColorValue: 0
+    showScale: true
 
   google.visualization.events.addListener treemap, 'select', ->
     selection = treemap.getSelection()

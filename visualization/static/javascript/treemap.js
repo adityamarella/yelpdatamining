@@ -17,13 +17,14 @@
       return dataColumns[value] = index;
     });
     treemap_view = new google.visualization.DataView(dataTable);
-    treemap_view.setColumns([dataColumns.category_title, dataColumns.parent_category, dataColumns.business_count]);
+    treemap_view.setColumns([dataColumns.category_title, dataColumns.parent_category, dataColumns.business_count, dataColumns.avg_review_count]);
     treemap = new google.visualization.TreeMap(document.getElementById('treemap-chart'));
     treemap.draw(treemap_view, {
+      fontColor: '#000000',
       fontSize: 16,
-      maxColor: '#00dd00',
-      midColor: '#00bb00',
-      minColor: '#009900'
+      maxColorValue: 100,
+      minColorValue: 0,
+      showScale: true
     });
     return google.visualization.events.addListener(treemap, 'select', function() {
       var row, selection;
