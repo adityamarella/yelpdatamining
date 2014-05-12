@@ -2,6 +2,7 @@ from collections import deque
 import json
 import sqlite3
 import sys
+import operator
 
 class QueryHelper(object):
 
@@ -274,6 +275,20 @@ class TermCloud(object):
     def insert_term_topic_frequencies(self, category_id, distribution):
         projection = ['term', 'freq', 'category_id', 'topic_id']
         for topic_id, item in enumerate(distribution):
+            for i,(term,freq) in enumerate(item):
+                values = [term, freq, category_id, topic_id]
+                self.query_helper._insert(self.TABLE_NAME, 
+                        projection,
+                        values)
+                if i>20:
+                    break
+        self.query_helper.commit()
+
+    def insert_cluster_term_frequencies(self, category_id, distribution):
+        projection = ['term', 'freq', 'category_id', 'topic_id']
+        for topic_id, item in distribution.iteritems():
+            item = sorted(item, key=operator.itemgetter(1)) 
+            item.reverse()
             for i,(term,freq) in enumerate(item):
                 values = [term, freq, category_id, topic_id]
                 self.query_helper._insert(self.TABLE_NAME, 
