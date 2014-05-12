@@ -67,12 +67,11 @@ class MainHandler(BaseHandler):
         data_table.LoadData(data)
         return data_table.ToJSon(columns_order=tuple(projection)) 
 
-    def ldatopics(self, category):
+    def ldatopics(self, category, table="ldatopics"):  
         projection = ["topic_id","term", "freq"]
 
-        stmt = "select %s from ldatopics\
-                where category_id=%%s\
-                limit 100"%(','.join(projection))
+        stmt = "select %s from %s\
+                where category_id=%%s"%(','.join(projection), table)
         rows = self.query_helper.run_query(stmt, (category))
 
         description = {
@@ -90,6 +89,9 @@ class MainHandler(BaseHandler):
         data_table.LoadData(data)
         return data_table.ToJSon(columns_order=tuple(projection)) 
 
+    def get_static_data(self, mode):
+        fpath = "data/%s.json"%mode
+        return open(fpath).read()
         
     # This method should return the html to be displayed
     def get(self):
@@ -102,14 +104,17 @@ class MainHandler(BaseHandler):
                 raise NameError("input format error")
              
             category = int(self.request.get("category", -1))
-            
-            resp = ""
-            if mode=="adjectivenoun":
-                resp = self.adjectivenoun(category)
-            elif mode=="topics":
-                resp = self.ldatopics(category)
-            elif mode=="cluster":
-                pass
+
+            if category==-1:
+                resp = self.get_static_data(mode)
+            else:
+                resp = ""
+                if mode=="adjectivenoun":
+                    resp = self.adjectivenoun(category)
+                elif mode=="topics":
+                    resp = self.ldatopics(category)
+                elif mode=="cluster":
+                    resp = self.ldatopics(category, table='yelpcluster')
 
             headers = self.write_response(resp, resp_type, 200)
         except NameError,e:

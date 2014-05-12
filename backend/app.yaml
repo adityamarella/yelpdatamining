@@ -18,6 +18,10 @@ handlers:
 - url: /getinfo
   script: main.app
 
+- url: /data
+  static_dir: data
+  application_readable: true
+
 libraries:
 - name: webapp2
   version: "latest"
