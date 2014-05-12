@@ -106,7 +106,10 @@ class MainHandler(BaseHandler):
             category = int(self.request.get("category", -1))
 
             if category==-1:
-                resp = self.get_static_data(mode)
+                if mode=="adjectivenoun":
+                    resp = self.adjectivenoun(category)
+                else:
+                    resp = self.get_static_data(mode)
             else:
                 resp = ""
                 if mode=="adjectivenoun":
