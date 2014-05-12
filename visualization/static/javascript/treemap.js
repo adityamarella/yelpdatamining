@@ -83,7 +83,6 @@
   updateTopics = function(categoryId) {
     var jsonData, topicsDataTable, topicsDataView, url;
     url = "http://amarella-project-data.appspot.com/getinfo?mode=topics&format=json&category=" + categoryId;
-    url = "http://amarella-project-data.appspot.com/getinfo?mode=topics&format=json&category=0";
     jsonData = $.ajax({
       url: url,
       dataType: "json",
