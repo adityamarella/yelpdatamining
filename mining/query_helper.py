@@ -230,11 +230,30 @@ class TermCloud(object):
         rows = self.query_helper.run_query(stmt)
         return [row[0] for row in rows]
 
-    def insert_term_frequencies(self, category_id, freq_dict):
+    def insert_term_frequencies(self, category_id, freq_dict, topic_id=None):
+        projection = ['term', 'freq', 'category_id']
+        if topic_id!=None:
+            projection.append('topic_id')
+
         for term,freq in freq_dict.iteritems():
+            values = [term, freq, category_id]
+            if topic_id!=None:
+                values.append(topic_id)
             self.query_helper._insert(self.TABLE_NAME, 
-                    ['term', 'freq', 'category_id'], 
-                    [term, freq, category_id])
+                    projection,
+                    values)
+        self.query_helper.commit()
+    
+    def insert_term_topic_frequencies(self, category_id, distribution):
+        projection = ['term', 'freq', 'category_id', 'topic_id']
+        for topic_id, item in enumerate(distribution):
+            for i,(term,freq) in enumerate(item):
+                values = [term, freq, category_id, topic_id]
+                self.query_helper._insert(self.TABLE_NAME, 
+                        projection,
+                        values)
+                if i>20:
+                    break
         self.query_helper.commit()
 
 
