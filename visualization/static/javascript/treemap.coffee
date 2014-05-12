@@ -3,6 +3,7 @@ categoryDataColumns = {}
 adjNounDataTable = null
 treemap = null
 adjNounCloud = null
+topicClouds = []
 
 google.load "visualization", "1", { packages: ["treemap"] }
 
@@ -32,7 +33,10 @@ google.setOnLoadCallback ->
     minColorValue: 0
     showScale: true
 
-  adjNounCloud = new TermCloud document.getElementById('adjnoun-tc')
+  adjNounCloud = new TermCloud document.getElementById('tc-adjnoun')
+  topicClouds = $('.tc-topic').map(->
+    new TermCloud document.getElementById(@id)
+  ).get()
 
   updateVisualizations(0)
 
@@ -52,10 +56,12 @@ getSelectedCategoryRow = ->
 
 
 updateVisualizations = (categoryRow) ->
-  updateAdjNoun(categoryRow)
+  categoryId = categoryDataTable.getValue categoryRow, categoryDataColumns.category_id
+  updateAdjNoun categoryId
+  updateTopics categoryId
 
-updateAdjNoun = (categoryRow) ->
-  categoryId = categoryDataTable.getValue(categoryRow, categoryDataColumns.category_id)
+
+updateAdjNoun = (categoryId) ->
   url = "http://amarella-project-data.appspot.com/getinfo?mode=adjectivenoun&format=json&category=#{categoryId}"
 
   jsonData = $.ajax(
@@ -70,3 +76,24 @@ updateAdjNoun = (categoryRow) ->
   adjNounDataView.setColumns [1, 2]
 
   adjNounCloud.draw adjNounDataView, null
+
+
+updateTopics = (categoryId) ->
+  url = "http://amarella-project-data.appspot.com/getinfo?mode=topics&format=json&category=#{categoryId}"
+  url = "http://amarella-project-data.appspot.com/getinfo?mode=topics&format=json&category=0"
+
+  jsonData = $.ajax(
+    url: url,
+    dataType: "json"
+    async: false
+  ).responseText
+
+  # Create data table
+  topicsDataTable = new google.visualization.DataTable jsonData
+  topicsDataView = new google.visualization.DataView topicsDataTable
+  topicsDataView.setColumns [1, 2]
+
+  topicClouds.forEach (topicCloud, index) ->
+    topicRows = topicsDataTable.getFilteredRows [{column: 0, value: index}]
+    topicsDataView.setRows topicRows
+    topicCloud.draw topicsDataView, null
