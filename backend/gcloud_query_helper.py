@@ -26,12 +26,12 @@ class GCloudQueryHelper(object):
         else:
             self.db = MySQLdb.connect(host='173.194.242.169',
                     unix_socket='/cloudsql/' + _INSTANCE_NAME,
-                    db=_DB, user='root', passwd=os.getenv("GCLOUD_PASSWD"))
+                    db=_DB, user='root', passwd="")
 
         self.cursor = self.db.cursor()
 
     # Takes the database link and the query as input
-    def run_query(self, query, bindings):
+    def run_query(self, query, bindings=[]):
         try:
             self.cursor.execute(query, bindings)
             return self.cursor.fetchall()
